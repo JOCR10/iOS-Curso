@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFDE3EEC1EC69CF8001332B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE3EEB1EC69CF8001332B1 /* AppDelegate.swift */; };
+		EFDE3EEE1EC69CF8001332B1 /* OperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE3EED1EC69CF8001332B1 /* OperationsViewController.swift */; };
+		EFDE3EF11EC69CF8001332B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDE3EEF1EC69CF8001332B1 /* Main.storyboard */; };
+		EFDE3EF31EC69CF8001332B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDE3EF21EC69CF8001332B1 /* Assets.xcassets */; };
+		EFDE3EF61EC69CF8001332B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDE3EF41EC69CF8001332B1 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EFDE3EE81EC69CF8001332B1 /* TareaCalculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TareaCalculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDE3EEB1EC69CF8001332B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFDE3EED1EC69CF8001332B1 /* OperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsViewController.swift; sourceTree = "<group>"; };
+		EFDE3EF01EC69CF8001332B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFDE3EF21EC69CF8001332B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFDE3EF51EC69CF8001332B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFDE3EF71EC69CF8001332B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFDE3EE51EC69CF8001332B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFDE3EDF1EC69CF8001332B1 = {
+			isa = PBXGroup;
+			children = (
+				EFDE3EEA1EC69CF8001332B1 /* TareaCalculadora */,
+				EFDE3EE91EC69CF8001332B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFDE3EE91EC69CF8001332B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFDE3EE81EC69CF8001332B1 /* TareaCalculadora.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDE3EEA1EC69CF8001332B1 /* TareaCalculadora */ = {
+			isa = PBXGroup;
+			children = (
+				EFDE3EEB1EC69CF8001332B1 /* AppDelegate.swift */,
+				EFDE3EED1EC69CF8001332B1 /* OperationsViewController.swift */,
+				EFDE3EEF1EC69CF8001332B1 /* Main.storyboard */,
+				EFDE3EF21EC69CF8001332B1 /* Assets.xcassets */,
+				EFDE3EF41EC69CF8001332B1 /* LaunchScreen.storyboard */,
+				EFDE3EF71EC69CF8001332B1 /* Info.plist */,
+			);
+			path = TareaCalculadora;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFDE3EE71EC69CF8001332B1 /* TareaCalculadora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDE3EFA1EC69CF8001332B1 /* Build configuration list for PBXNativeTarget "TareaCalculadora" */;
+			buildPhases = (
+				EFDE3EE41EC69CF8001332B1 /* Sources */,
+				EFDE3EE51EC69CF8001332B1 /* Frameworks */,
+				EFDE3EE61EC69CF8001332B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TareaCalculadora;
+			productName = TareaCalculadora;
+			productReference = EFDE3EE81EC69CF8001332B1 /* TareaCalculadora.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFDE3EE01EC69CF8001332B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Local User";
+				TargetAttributes = {
+					EFDE3EE71EC69CF8001332B1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EFDE3EE31EC69CF8001332B1 /* Build configuration list for PBXProject "TareaCalculadora" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFDE3EDF1EC69CF8001332B1;
+			productRefGroup = EFDE3EE91EC69CF8001332B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFDE3EE71EC69CF8001332B1 /* TareaCalculadora */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFDE3EE61EC69CF8001332B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDE3EF61EC69CF8001332B1 /* LaunchScreen.storyboard in Resources */,
+				EFDE3EF31EC69CF8001332B1 /* Assets.xcassets in Resources */,
+				EFDE3EF11EC69CF8001332B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFDE3EE41EC69CF8001332B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDE3EEE1EC69CF8001332B1 /* OperationsViewController.swift in Sources */,
+				EFDE3EEC1EC69CF8001332B1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFDE3EEF1EC69CF8001332B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDE3EF01EC69CF8001332B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFDE3EF41EC69CF8001332B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDE3EF51EC69CF8001332B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFDE3EF81EC69CF8001332B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFDE3EF91EC69CF8001332B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFDE3EFB1EC69CF8001332B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TareaCalculadora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMPESA.TareaCalculadora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EFDE3EFC1EC69CF8001332B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TareaCalculadora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMPESA.TareaCalculadora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFDE3EE31EC69CF8001332B1 /* Build configuration list for PBXProject "TareaCalculadora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDE3EF81EC69CF8001332B1 /* Debug */,
+				EFDE3EF91EC69CF8001332B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDE3EFA1EC69CF8001332B1 /* Build configuration list for PBXNativeTarget "TareaCalculadora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDE3EFB1EC69CF8001332B1 /* Debug */,
+				EFDE3EFC1EC69CF8001332B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFDE3EE01EC69CF8001332B1 /* Project object */;
+}

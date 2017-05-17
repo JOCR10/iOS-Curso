@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF45E5B71ECBD3EF00F49E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45E5B61ECBD3EF00F49E3E /* AppDelegate.swift */; };
+		EF45E5BE1ECBD3F000F49E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF45E5BD1ECBD3F000F49E3E /* Assets.xcassets */; };
+		EF45E5C11ECBD3F000F49E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF45E5BF1ECBD3F000F49E3E /* LaunchScreen.storyboard */; };
+		EF45E5C91ECBD40F00F49E3E /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF45E5C81ECBD40F00F49E3E /* Storyboard.storyboard */; };
+		EF45E5CB1ECBD42700F49E3E /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45E5CA1ECBD42700F49E3E /* DogsViewController.swift */; };
+		EF45E5CD1ECBD53D00F49E3E /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45E5CC1ECBD53D00F49E3E /* Dog.swift */; };
+		EF45E5CF1ECBDEEA00F49E3E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45E5CE1ECBDEEA00F49E3E /* Helper.swift */; };
+		EF45E5D31ECBE04F00F49E3E /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45E5D11ECBE04F00F49E3E /* DogTableViewCell.swift */; };
+		EF45E5D41ECBE04F00F49E3E /* DogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF45E5D21ECBE04F00F49E3E /* DogTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF45E5B31ECBD3EF00F49E3E /* CustomTableViewWithViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTableViewWithViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF45E5B61ECBD3EF00F49E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF45E5BD1ECBD3F000F49E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF45E5C01ECBD3F000F49E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF45E5C21ECBD3F000F49E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF45E5C81ECBD40F00F49E3E /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		EF45E5CA1ECBD42700F49E3E /* DogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsViewController.swift; sourceTree = "<group>"; };
+		EF45E5CC1ECBD53D00F49E3E /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		EF45E5CE1ECBDEEA00F49E3E /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EF45E5D11ECBE04F00F49E3E /* DogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
+		EF45E5D21ECBE04F00F49E3E /* DogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF45E5B01ECBD3EF00F49E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF45E5AA1ECBD3EF00F49E3E = {
+			isa = PBXGroup;
+			children = (
+				EF45E5B51ECBD3EF00F49E3E /* CustomTableViewWithViewControllerExample */,
+				EF45E5B41ECBD3EF00F49E3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF45E5B41ECBD3EF00F49E3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF45E5B31ECBD3EF00F49E3E /* CustomTableViewWithViewControllerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF45E5B51ECBD3EF00F49E3E /* CustomTableViewWithViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				EF45E5D01ECBE00900F49E3E /* CustomCell */,
+				EF45E5B61ECBD3EF00F49E3E /* AppDelegate.swift */,
+				EF45E5BD1ECBD3F000F49E3E /* Assets.xcassets */,
+				EF45E5BF1ECBD3F000F49E3E /* LaunchScreen.storyboard */,
+				EF45E5C21ECBD3F000F49E3E /* Info.plist */,
+				EF45E5C81ECBD40F00F49E3E /* Storyboard.storyboard */,
+				EF45E5CA1ECBD42700F49E3E /* DogsViewController.swift */,
+				EF45E5CC1ECBD53D00F49E3E /* Dog.swift */,
+				EF45E5CE1ECBDEEA00F49E3E /* Helper.swift */,
+			);
+			path = CustomTableViewWithViewControllerExample;
+			sourceTree = "<group>";
+		};
+		EF45E5D01ECBE00900F49E3E /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF45E5D11ECBE04F00F49E3E /* DogTableViewCell.swift */,
+				EF45E5D21ECBE04F00F49E3E /* DogTableViewCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF45E5B21ECBD3EF00F49E3E /* CustomTableViewWithViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF45E5C51ECBD3F000F49E3E /* Build configuration list for PBXNativeTarget "CustomTableViewWithViewControllerExample" */;
+			buildPhases = (
+				EF45E5AF1ECBD3EF00F49E3E /* Sources */,
+				EF45E5B01ECBD3EF00F49E3E /* Frameworks */,
+				EF45E5B11ECBD3EF00F49E3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomTableViewWithViewControllerExample;
+			productName = CustomTableViewWithViewControllerExample;
+			productReference = EF45E5B31ECBD3EF00F49E3E /* CustomTableViewWithViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF45E5AB1ECBD3EF00F49E3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Local User";
+				TargetAttributes = {
+					EF45E5B21ECBD3EF00F49E3E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF45E5AE1ECBD3EF00F49E3E /* Build configuration list for PBXProject "CustomTableViewWithViewControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF45E5AA1ECBD3EF00F49E3E;
+			productRefGroup = EF45E5B41ECBD3EF00F49E3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF45E5B21ECBD3EF00F49E3E /* CustomTableViewWithViewControllerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF45E5B11ECBD3EF00F49E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF45E5C11ECBD3F000F49E3E /* LaunchScreen.storyboard in Resources */,
+				EF45E5BE1ECBD3F000F49E3E /* Assets.xcassets in Resources */,
+				EF45E5D41ECBE04F00F49E3E /* DogTableViewCell.xib in Resources */,
+				EF45E5C91ECBD40F00F49E3E /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF45E5AF1ECBD3EF00F49E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF45E5B71ECBD3EF00F49E3E /* AppDelegate.swift in Sources */,
+				EF45E5CB1ECBD42700F49E3E /* DogsViewController.swift in Sources */,
+				EF45E5D31ECBE04F00F49E3E /* DogTableViewCell.swift in Sources */,
+				EF45E5CD1ECBD53D00F49E3E /* Dog.swift in Sources */,
+				EF45E5CF1ECBDEEA00F49E3E /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF45E5BF1ECBD3F000F49E3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF45E5C01ECBD3F000F49E3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF45E5C31ECBD3F000F49E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF45E5C41ECBD3F000F49E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF45E5C61ECBD3F000F49E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomTableViewWithViewControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMPESA.CustomTableViewWithViewControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF45E5C71ECBD3F000F49E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomTableViewWithViewControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMPESA.CustomTableViewWithViewControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF45E5AE1ECBD3EF00F49E3E /* Build configuration list for PBXProject "CustomTableViewWithViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF45E5C31ECBD3F000F49E3E /* Debug */,
+				EF45E5C41ECBD3F000F49E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF45E5C51ECBD3F000F49E3E /* Build configuration list for PBXNativeTarget "CustomTableViewWithViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF45E5C61ECBD3F000F49E3E /* Debug */,
+				EF45E5C71ECBD3F000F49E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF45E5AB1ECBD3EF00F49E3E /* Project object */;
+}
