@@ -15,6 +15,8 @@
 		EFEBC7541ECE72F400CBB012 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBC7531ECE72F400CBB012 /* Helper.swift */; };
 		EFEBC7571ECE750900CBB012 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBC7561ECE750900CBB012 /* News.swift */; };
 		EFEBC7591ECE751A00CBB012 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBC7581ECE751A00CBB012 /* Category.swift */; };
+		EFEBC75D1ECE7BD100CBB012 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBC75B1ECE7BD100CBB012 /* CategoryTableViewCell.swift */; };
+		EFEBC75E1ECE7BD100CBB012 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFEBC75C1ECE7BD100CBB012 /* CategoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EFEBC7531ECE72F400CBB012 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = ../Helper.swift; sourceTree = "<group>"; };
 		EFEBC7561ECE750900CBB012 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		EFEBC7581ECE751A00CBB012 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EFEBC75B1ECE7BD100CBB012 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		EFEBC75C1ECE7BD100CBB012 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		EFEBC74D1ECE71AE00CBB012 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				EFEBC75A1ECE7B5800CBB012 /* CustomCell */,
 				EFEBC74F1ECE71FF00CBB012 /* CategoryViewController.swift */,
 				EFEBC7581ECE751A00CBB012 /* Category.swift */,
 			);
@@ -95,6 +100,16 @@
 				EFEBC7531ECE72F400CBB012 /* Helper.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EFEBC75A1ECE7B5800CBB012 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFEBC75B1ECE7BD100CBB012 /* CategoryTableViewCell.swift */,
+				EFEBC75C1ECE7BD100CBB012 /* CategoryTableViewCell.xib */,
+			);
+			name = CustomCell;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFEBC75E1ECE7BD100CBB012 /* CategoryTableViewCell.xib in Resources */,
 				EFEBC7431ECE65EC00CBB012 /* Assets.xcassets in Resources */,
 				EFEBC7411ECE65EC00CBB012 /* Main.storyboard in Resources */,
 			);
@@ -172,6 +188,7 @@
 				EFEBC7501ECE71FF00CBB012 /* CategoryViewController.swift in Sources */,
 				EFEBC73C1ECE65EC00CBB012 /* AppDelegate.swift in Sources */,
 				EFEBC7571ECE750900CBB012 /* News.swift in Sources */,
+				EFEBC75D1ECE7BD100CBB012 /* CategoryTableViewCell.swift in Sources */,
 				EFEBC7541ECE72F400CBB012 /* Helper.swift in Sources */,
 				EFEBC7591ECE751A00CBB012 /* Category.swift in Sources */,
 			);
