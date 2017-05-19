@@ -20,4 +20,5 @@ class News: NSObject {
         self.createdAt = createdAt
     }
     
+    
 }

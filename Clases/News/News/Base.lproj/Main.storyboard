@@ -58,8 +58,27 @@
                     <view key="view" contentMode="scaleToFill" id="Q8e-s7-SN9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="luh-Ty-Wa8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="I6G-he-SAh" id="8TK-Ik-pYK"/>
+                                    <outlet property="delegate" destination="I6G-he-SAh" id="sSR-mU-KcO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="luh-Ty-Wa8" firstAttribute="leading" secondItem="Q8e-s7-SN9" secondAttribute="leading" id="05h-KM-Yoa"/>
+                            <constraint firstItem="Y2Y-2n-lfP" firstAttribute="top" secondItem="luh-Ty-Wa8" secondAttribute="bottom" id="VJX-uT-mYk"/>
+                            <constraint firstAttribute="trailing" secondItem="luh-Ty-Wa8" secondAttribute="trailing" id="qH4-Wt-5su"/>
+                            <constraint firstItem="luh-Ty-Wa8" firstAttribute="top" secondItem="zwB-iG-ox9" secondAttribute="bottom" id="wgR-t9-8Jy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newsTableView" destination="luh-Ty-Wa8" id="BbC-fK-WuN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSm-Je-ED8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

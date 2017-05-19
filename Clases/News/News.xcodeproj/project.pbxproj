@@ -17,6 +17,8 @@
 		EFEBC7591ECE751A00CBB012 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBC7581ECE751A00CBB012 /* Category.swift */; };
 		EFEBC75D1ECE7BD100CBB012 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBC75B1ECE7BD100CBB012 /* CategoryTableViewCell.swift */; };
 		EFEBC75E1ECE7BD100CBB012 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFEBC75C1ECE7BD100CBB012 /* CategoryTableViewCell.xib */; };
+		EFEBC7621ECE861600CBB012 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBC7601ECE861600CBB012 /* NewsTableViewCell.swift */; };
+		EFEBC7631ECE861600CBB012 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFEBC7611ECE861600CBB012 /* NewsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		EFEBC7581ECE751A00CBB012 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		EFEBC75B1ECE7BD100CBB012 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		EFEBC75C1ECE7BD100CBB012 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		EFEBC7601ECE861600CBB012 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		EFEBC7611ECE861600CBB012 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		EFEBC74E1ECE71C300CBB012 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				EFEBC75F1ECE860500CBB012 /* CustomCell */,
 				EFEBC7511ECE722D00CBB012 /* NewsViewController.swift */,
 				EFEBC7561ECE750900CBB012 /* News.swift */,
 			);
@@ -110,6 +115,15 @@
 			);
 			name = CustomCell;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		EFEBC75F1ECE860500CBB012 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFEBC7601ECE861600CBB012 /* NewsTableViewCell.swift */,
+				EFEBC7611ECE861600CBB012 /* NewsTableViewCell.xib */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +187,7 @@
 			files = (
 				EFEBC75E1ECE7BD100CBB012 /* CategoryTableViewCell.xib in Resources */,
 				EFEBC7431ECE65EC00CBB012 /* Assets.xcassets in Resources */,
+				EFEBC7631ECE861600CBB012 /* NewsTableViewCell.xib in Resources */,
 				EFEBC7411ECE65EC00CBB012 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +201,7 @@
 			files = (
 				EFEBC7521ECE722D00CBB012 /* NewsViewController.swift in Sources */,
 				EFEBC7501ECE71FF00CBB012 /* CategoryViewController.swift in Sources */,
+				EFEBC7621ECE861600CBB012 /* NewsTableViewCell.swift in Sources */,
 				EFEBC73C1ECE65EC00CBB012 /* AppDelegate.swift in Sources */,
 				EFEBC7571ECE750900CBB012 /* News.swift in Sources */,
 				EFEBC75D1ECE7BD100CBB012 /* CategoryTableViewCell.swift in Sources */,

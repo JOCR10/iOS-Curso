@@ -38,6 +38,12 @@ extension CategoryViewController: UITableViewDataSource, UITableViewDelegate {
         return categories.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let newsViewController = storyboard?.instantiateViewController(withIdentifier: NewsViewController.getViewControllerIdentifier()) as! NewsViewController
+        newsViewController.news = categories[indexPath.row].newsArray
+        navigationController?.pushViewController(newsViewController, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = (tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.getTableViewCellIdentifier())) as! CategoryTableViewCell
         let category = categories[indexPath.row]
