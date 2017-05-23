@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFCDEA5E1ECE54A000CF869E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDEA5D1ECE54A000CF869E /* AppDelegate.swift */; };
-		EFCDEA631ECE54A000CF869E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDEA611ECE54A000CF869E /* Main.storyboard */; };
-		EFCDEA651ECE54A000CF869E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCDEA641ECE54A000CF869E /* Assets.xcassets */; };
-		EFCDEA681ECE54A000CF869E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDEA661ECE54A000CF869E /* LaunchScreen.storyboard */; };
-		EFCDEA701ECE555D00CF869E /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDEA6F1ECE555D00CF869E /* NumbersViewController.swift */; };
-		EFCDEA761ECE569E00CF869E /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDEA741ECE569E00CF869E /* NumberTableViewCell.swift */; };
-		EFCDEA771ECE569E00CF869E /* NumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCDEA751ECE569E00CF869E /* NumberTableViewCell.xib */; };
-		EFCDEA791ECE575500CF869E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDEA781ECE575500CF869E /* Helper.swift */; };
+		EFE89AFF1ED4EABD007751DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE89AFE1ED4EABD007751DD /* AppDelegate.swift */; };
+		EFE89B041ED4EABD007751DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE89B021ED4EABD007751DD /* Main.storyboard */; };
+		EFE89B061ED4EABD007751DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE89B051ED4EABD007751DD /* Assets.xcassets */; };
+		EFE89B091ED4EABD007751DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE89B071ED4EABD007751DD /* LaunchScreen.storyboard */; };
+		EFE89B111ED4F175007751DD /* EnterNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE89B101ED4F175007751DD /* EnterNumberViewController.swift */; };
+		EFE89B161ED4F238007751DD /* NumberCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE89B141ED4F238007751DD /* NumberCustomCell.swift */; };
+		EFE89B171ED4F238007751DD /* NumberCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE89B151ED4F238007751DD /* NumberCustomCell.xib */; };
+		EFE89B191ED4F37D007751DD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE89B181ED4F37D007751DD /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EFCDEA5A1ECE54A000CF869E /* Quiz 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFCDEA5D1ECE54A000CF869E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFCDEA621ECE54A000CF869E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EFCDEA641ECE54A000CF869E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EFCDEA671ECE54A000CF869E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EFCDEA691ECE54A000CF869E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFCDEA6F1ECE555D00CF869E /* NumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
-		EFCDEA741ECE569E00CF869E /* NumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
-		EFCDEA751ECE569E00CF869E /* NumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberTableViewCell.xib; sourceTree = "<group>"; };
-		EFCDEA781ECE575500CF869E /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EFE89AFB1ED4EABD007751DD /* Quiz 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE89AFE1ED4EABD007751DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFE89B031ED4EABD007751DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFE89B051ED4EABD007751DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFE89B081ED4EABD007751DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFE89B0A1ED4EABD007751DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE89B101ED4F175007751DD /* EnterNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNumberViewController.swift; sourceTree = "<group>"; };
+		EFE89B141ED4F238007751DD /* NumberCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCustomCell.swift; sourceTree = "<group>"; };
+		EFE89B151ED4F238007751DD /* NumberCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberCustomCell.xib; sourceTree = "<group>"; };
+		EFE89B181ED4F37D007751DD /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EFCDEA571ECE54A000CF869E /* Frameworks */ = {
+		EFE89AF81ED4EABC007751DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,42 +41,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EFCDEA511ECE54A000CF869E = {
+		EFE89AF21ED4EABC007751DD = {
 			isa = PBXGroup;
 			children = (
-				EFCDEA5C1ECE54A000CF869E /* Quiz 2 */,
-				EFCDEA5B1ECE54A000CF869E /* Products */,
+				EFE89AFD1ED4EABD007751DD /* Quiz 3 */,
+				EFE89AFC1ED4EABD007751DD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EFCDEA5B1ECE54A000CF869E /* Products */ = {
+		EFE89AFC1ED4EABD007751DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFCDEA5A1ECE54A000CF869E /* Quiz 2.app */,
+				EFE89AFB1ED4EABD007751DD /* Quiz 3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EFCDEA5C1ECE54A000CF869E /* Quiz 2 */ = {
+		EFE89AFD1ED4EABD007751DD /* Quiz 3 */ = {
 			isa = PBXGroup;
 			children = (
-				EFCDEA711ECE556600CF869E /* CustomCell */,
-				EFCDEA5D1ECE54A000CF869E /* AppDelegate.swift */,
-				EFCDEA611ECE54A000CF869E /* Main.storyboard */,
-				EFCDEA641ECE54A000CF869E /* Assets.xcassets */,
-				EFCDEA661ECE54A000CF869E /* LaunchScreen.storyboard */,
-				EFCDEA691ECE54A000CF869E /* Info.plist */,
-				EFCDEA6F1ECE555D00CF869E /* NumbersViewController.swift */,
-				EFCDEA781ECE575500CF869E /* Helper.swift */,
+				EFE89B131ED4F212007751DD /* CustomCell */,
+				EFE89AFE1ED4EABD007751DD /* AppDelegate.swift */,
+				EFE89B021ED4EABD007751DD /* Main.storyboard */,
+				EFE89B051ED4EABD007751DD /* Assets.xcassets */,
+				EFE89B071ED4EABD007751DD /* LaunchScreen.storyboard */,
+				EFE89B0A1ED4EABD007751DD /* Info.plist */,
+				EFE89B101ED4F175007751DD /* EnterNumberViewController.swift */,
+				EFE89B181ED4F37D007751DD /* Helper.swift */,
 			);
-			path = "Quiz 2";
+			path = "Quiz 3";
 			sourceTree = "<group>";
 		};
-		EFCDEA711ECE556600CF869E /* CustomCell */ = {
+		EFE89B131ED4F212007751DD /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				EFCDEA741ECE569E00CF869E /* NumberTableViewCell.swift */,
-				EFCDEA751ECE569E00CF869E /* NumberTableViewCell.xib */,
+				EFE89B141ED4F238007751DD /* NumberCustomCell.swift */,
+				EFE89B151ED4F238007751DD /* NumberCustomCell.xib */,
 			);
 			name = CustomCell;
 			sourceTree = "<group>";
@@ -84,40 +84,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EFCDEA591ECE54A000CF869E /* Quiz 2 */ = {
+		EFE89AFA1ED4EABC007751DD /* Quiz 3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFCDEA6C1ECE54A000CF869E /* Build configuration list for PBXNativeTarget "Quiz 2" */;
+			buildConfigurationList = EFE89B0D1ED4EABD007751DD /* Build configuration list for PBXNativeTarget "Quiz 3" */;
 			buildPhases = (
-				EFCDEA561ECE54A000CF869E /* Sources */,
-				EFCDEA571ECE54A000CF869E /* Frameworks */,
-				EFCDEA581ECE54A000CF869E /* Resources */,
+				EFE89AF71ED4EABC007751DD /* Sources */,
+				EFE89AF81ED4EABC007751DD /* Frameworks */,
+				EFE89AF91ED4EABC007751DD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Quiz 2";
-			productName = "Quiz 2";
-			productReference = EFCDEA5A1ECE54A000CF869E /* Quiz 2.app */;
+			name = "Quiz 3";
+			productName = "Quiz 3";
+			productReference = EFE89AFB1ED4EABD007751DD /* Quiz 3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EFCDEA521ECE54A000CF869E /* Project object */ = {
+		EFE89AF31ED4EABC007751DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Local User";
 				TargetAttributes = {
-					EFCDEA591ECE54A000CF869E = {
+					EFE89AFA1ED4EABC007751DD = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = EFCDEA551ECE54A000CF869E /* Build configuration list for PBXProject "Quiz 2" */;
+			buildConfigurationList = EFE89AF61ED4EABC007751DD /* Build configuration list for PBXProject "Quiz 3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,57 +125,57 @@
 				en,
 				Base,
 			);
-			mainGroup = EFCDEA511ECE54A000CF869E;
-			productRefGroup = EFCDEA5B1ECE54A000CF869E /* Products */;
+			mainGroup = EFE89AF21ED4EABC007751DD;
+			productRefGroup = EFE89AFC1ED4EABD007751DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EFCDEA591ECE54A000CF869E /* Quiz 2 */,
+				EFE89AFA1ED4EABC007751DD /* Quiz 3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EFCDEA581ECE54A000CF869E /* Resources */ = {
+		EFE89AF91ED4EABC007751DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCDEA771ECE569E00CF869E /* NumberTableViewCell.xib in Resources */,
-				EFCDEA681ECE54A000CF869E /* LaunchScreen.storyboard in Resources */,
-				EFCDEA651ECE54A000CF869E /* Assets.xcassets in Resources */,
-				EFCDEA631ECE54A000CF869E /* Main.storyboard in Resources */,
+				EFE89B091ED4EABD007751DD /* LaunchScreen.storyboard in Resources */,
+				EFE89B171ED4F238007751DD /* NumberCustomCell.xib in Resources */,
+				EFE89B061ED4EABD007751DD /* Assets.xcassets in Resources */,
+				EFE89B041ED4EABD007751DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EFCDEA561ECE54A000CF869E /* Sources */ = {
+		EFE89AF71ED4EABC007751DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCDEA761ECE569E00CF869E /* NumberTableViewCell.swift in Sources */,
-				EFCDEA5E1ECE54A000CF869E /* AppDelegate.swift in Sources */,
-				EFCDEA701ECE555D00CF869E /* NumbersViewController.swift in Sources */,
-				EFCDEA791ECE575500CF869E /* Helper.swift in Sources */,
+				EFE89B111ED4F175007751DD /* EnterNumberViewController.swift in Sources */,
+				EFE89B161ED4F238007751DD /* NumberCustomCell.swift in Sources */,
+				EFE89AFF1ED4EABD007751DD /* AppDelegate.swift in Sources */,
+				EFE89B191ED4F37D007751DD /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EFCDEA611ECE54A000CF869E /* Main.storyboard */ = {
+		EFE89B021ED4EABD007751DD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EFCDEA621ECE54A000CF869E /* Base */,
+				EFE89B031ED4EABD007751DD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EFCDEA661ECE54A000CF869E /* LaunchScreen.storyboard */ = {
+		EFE89B071ED4EABD007751DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EFCDEA671ECE54A000CF869E /* Base */,
+				EFE89B081ED4EABD007751DD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EFCDEA6A1ECE54A000CF869E /* Debug */ = {
+		EFE89B0B1ED4EABD007751DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		EFCDEA6B1ECE54A000CF869E /* Release */ = {
+		EFE89B0C1ED4EABD007751DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,25 +276,25 @@
 			};
 			name = Release;
 		};
-		EFCDEA6D1ECE54A000CF869E /* Debug */ = {
+		EFE89B0E1ED4EABD007751DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Quiz 2/Info.plist";
+				INFOPLIST_FILE = "Quiz 3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "IMPESA.Quiz-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "IMPESA.Quiz-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		EFCDEA6E1ECE54A000CF869E /* Release */ = {
+		EFE89B0F1ED4EABD007751DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Quiz 2/Info.plist";
+				INFOPLIST_FILE = "Quiz 3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "IMPESA.Quiz-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "IMPESA.Quiz-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -303,25 +303,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EFCDEA551ECE54A000CF869E /* Build configuration list for PBXProject "Quiz 2" */ = {
+		EFE89AF61ED4EABC007751DD /* Build configuration list for PBXProject "Quiz 3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFCDEA6A1ECE54A000CF869E /* Debug */,
-				EFCDEA6B1ECE54A000CF869E /* Release */,
+				EFE89B0B1ED4EABD007751DD /* Debug */,
+				EFE89B0C1ED4EABD007751DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFCDEA6C1ECE54A000CF869E /* Build configuration list for PBXNativeTarget "Quiz 2" */ = {
+		EFE89B0D1ED4EABD007751DD /* Build configuration list for PBXNativeTarget "Quiz 3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFCDEA6D1ECE54A000CF869E /* Debug */,
-				EFCDEA6E1ECE54A000CF869E /* Release */,
+				EFE89B0E1ED4EABD007751DD /* Debug */,
+				EFE89B0F1ED4EABD007751DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EFCDEA521ECE54A000CF869E /* Project object */;
+	rootObject = EFE89AF31ED4EABC007751DD /* Project object */;
 }

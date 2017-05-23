@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enter Number View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EnterNumberViewController" customModule="Quiz_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8sz-aV-ZXm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="592"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="CTT-5R-9Nn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KfO-Ga-Foa"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrD-xN-J60">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPn-Hq-ovt">
+                                        <rect key="frame" x="10" y="10" width="200" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="KZC-zd-ktI"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgv-LC-5ru">
+                                        <rect key="frame" x="220" y="10" width="145" height="35"/>
+                                        <color key="backgroundColor" red="0.0" green="0.26701552350000002" blue="0.72240401330000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5OA-yy-CBo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="uPn-Hq-ovt" secondAttribute="bottom" constant="10" id="0jr-xU-6xN"/>
+                                    <constraint firstItem="uPn-Hq-ovt" firstAttribute="top" secondItem="TrD-xN-J60" secondAttribute="top" constant="10" id="6Qi-Na-iRx"/>
+                                    <constraint firstItem="uPn-Hq-ovt" firstAttribute="leading" secondItem="TrD-xN-J60" secondAttribute="leading" constant="10" id="6c2-dY-LOr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hgv-LC-5ru" secondAttribute="trailing" constant="10" id="TQS-HL-edv"/>
+                                    <constraint firstItem="Hgv-LC-5ru" firstAttribute="top" secondItem="TrD-xN-J60" secondAttribute="top" constant="10" id="cMf-TE-8Ob"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hgv-LC-5ru" secondAttribute="bottom" constant="10" id="hAl-Xb-7ka"/>
+                                    <constraint firstAttribute="height" constant="55" id="ufK-N2-hag"/>
+                                    <constraint firstItem="Hgv-LC-5ru" firstAttribute="leading" secondItem="uPn-Hq-ovt" secondAttribute="trailing" constant="10" id="uz4-3t-RgW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TrD-xN-J60" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Qd-d4-yPE"/>
+                            <constraint firstItem="TrD-xN-J60" firstAttribute="top" secondItem="8sz-aV-ZXm" secondAttribute="bottom" id="8cX-G1-cEh"/>
+                            <constraint firstItem="8sz-aV-ZXm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AtY-WI-Dkn"/>
+                            <constraint firstAttribute="trailing" secondItem="TrD-xN-J60" secondAttribute="trailing" id="B4C-7i-jib"/>
+                            <constraint firstAttribute="trailing" secondItem="8sz-aV-ZXm" secondAttribute="trailing" id="YcJ-8s-d9V"/>
+                            <constraint firstItem="TrD-xN-J60" firstAttribute="top" secondItem="8sz-aV-ZXm" secondAttribute="bottom" id="a6F-s4-bUF"/>
+                            <constraint firstItem="8sz-aV-ZXm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hzi-E1-wB2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TrD-xN-J60" secondAttribute="bottom" id="tX3-Vs-TNj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="8sz-aV-ZXm" id="m9S-rP-5At"/>
+                        <outlet property="textFieldValue" destination="uPn-Hq-ovt" id="wRw-sG-Pth"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
