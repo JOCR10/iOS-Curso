@@ -12,11 +12,12 @@ class NewsViewController: UIViewController {
     
     @IBOutlet weak var newsTableView: UITableView!
     var news: [News]?
+    var titleCategory: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         newsTableView.registerCustomCell(identifier: NewsTableViewCell.getTableViewCellIdentifier())
-        self.title = "News"
+        self.title = titleCategory!
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,6 +42,7 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
                 let cell = (tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.getTableViewCellIdentifier())) as! NewsTableViewCell
                 let new = news![indexPath.row]
                 cell.setUpCell(news: new)
+                
                 return cell
     }
     

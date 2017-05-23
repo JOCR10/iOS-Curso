@@ -41,6 +41,7 @@ extension CategoryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let newsViewController = storyboard?.instantiateViewController(withIdentifier: NewsViewController.getViewControllerIdentifier()) as! NewsViewController
         newsViewController.news = categories[indexPath.row].newsArray
+        newsViewController.titleCategory = categories[indexPath.row].name
         navigationController?.pushViewController(newsViewController, animated: true)
     }
     
