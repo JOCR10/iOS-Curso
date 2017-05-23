@@ -18,18 +18,33 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
         newsTableView.registerCustomCell(identifier: NewsTableViewCell.getTableViewCellIdentifier())
         self.title = titleCategory!
+        createdAddButto()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func createdAddButto(){
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add , target: self, action: #selector(addAction))
+        navigationItem.rightBarButtonItem = addButton
+    }
+    
+    func addAction(){
+        
+    
+    }
 }
 
 extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return news!.count
+        guard let news = news else{
+            return 0
+        }
+        
+        return news.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -39,14 +54,15 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                let cell = (tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.getTableViewCellIdentifier())) as! NewsTableViewCell
-                let new = news![indexPath.row]
-                cell.setUpCell(news: new)
-                
-                return cell
+        
+        let cell = (tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.getTableViewCellIdentifier())) as! NewsTableViewCell
+        let new = news![indexPath.row]
+        cell.setUpCell(news: new)
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
 }
