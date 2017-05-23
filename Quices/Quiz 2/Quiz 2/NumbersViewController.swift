@@ -46,6 +46,7 @@ extension NumbersViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell  = tableView.dequeueReusableCell(withIdentifier: NumberTableViewCell.getCellIdentifier()) as! NumberTableViewCell
         
         let value = numbers[indexPath.row]
