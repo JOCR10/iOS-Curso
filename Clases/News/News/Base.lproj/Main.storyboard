@@ -116,6 +116,10 @@
                         </connections>
                     </tableView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="textFieldName" destination="yAL-lk-VaQ" id="Ofm-g5-94q"/>
+                        <outlet property="textViewDescription" destination="YSa-p1-pBq" id="WSB-b6-UBM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qX-TH-gEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

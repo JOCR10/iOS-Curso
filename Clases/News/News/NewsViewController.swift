@@ -33,7 +33,8 @@ class NewsViewController: UIViewController {
     
     func addAction(){
         
-    
+        let newsDetailViewController = storyboard!.instantiateViewController(withIdentifier: NewsDetailTableViewController.getViewControllerIdentifier())
+        navigationController?.pushViewController(newsDetailViewController, animated: true)
     }
 }
 

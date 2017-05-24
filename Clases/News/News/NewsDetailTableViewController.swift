@@ -10,6 +10,9 @@ import UIKit
 
 class NewsDetailTableViewController: UITableViewController {
 
+    @IBOutlet weak var textViewDescription: UITextView!
+    @IBOutlet weak var textFieldName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,5 +26,14 @@ class NewsDetailTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func addSaveNews(){
+        let saveAction = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveNewsAction))
+        navigationItem.rightBarButtonItem = saveAction
+    }
+    
+    func saveNewsAction(){
+        
     }
 }
