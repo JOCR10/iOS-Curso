@@ -8,32 +8,37 @@
 
 import UIKit
 
-class NewsDetailTableViewController: UITableViewController {
+protocol NewsDetailTableViewControllerDelegate: class {
+    
+    func addNews(news : News)
+}
 
+class NewsDetailTableViewController: UITableViewController {
+    
     @IBOutlet weak var textViewDescription: UITextView!
     @IBOutlet weak var textFieldName: UITextField!
     
+    weak var delegate : NewsDetailTableViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        addSaveNews()
     }
     
-    func addSaveNews(){
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func addSaveNews()
+    {
         let saveAction = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveNewsAction))
         navigationItem.rightBarButtonItem = saveAction
     }
     
-    func saveNewsAction(){
-        
+    func saveNewsAction()
+    {
+        let news = News(titleNews: textFieldName.text!, descriptionNews: textViewDescription.text!, createdAt: Date())
+        delegate?.addNews(news: news)
+        navigationController?.popViewController(animated: true)
     }
 }

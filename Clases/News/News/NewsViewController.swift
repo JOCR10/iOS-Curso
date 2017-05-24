@@ -8,56 +8,70 @@
 
 import UIKit
 
+protocol NewsViewControllerDelegate: class {
+    
+    func addNews(news: [News], type: CategoryType)
+}
+
 class NewsViewController: UIViewController {
     
     @IBOutlet weak var newsTableView: UITableView!
-    var news: [News]?
+    
+    weak var delegate: NewsViewControllerDelegate?
+    
+    var newsArray: [News]?
+    var categoryType: CategoryType?
     var titleCategory: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         newsTableView.registerCustomCell(identifier: NewsTableViewCell.getTableViewCellIdentifier())
         self.title = titleCategory!
-        createdAddButto()
+        createdAddButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let newsArray = newsArray, let categoryType = categoryType
+        {
+            delegate?.addNews(news : newsArray, type: categoryType)
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    func createdAddButto(){
+    func createdAddButton(){
         let addButton = UIBarButtonItem(barButtonSystemItem: .add , target: self, action: #selector(addAction))
         navigationItem.rightBarButtonItem = addButton
     }
     
     func addAction(){
         
-        let newsDetailViewController = storyboard!.instantiateViewController(withIdentifier: NewsDetailTableViewController.getViewControllerIdentifier())
+        let newsDetailViewController = storyboard!.instantiateViewController(withIdentifier: NewsDetailTableViewController.getViewControllerIdentifier()) as! NewsDetailTableViewController
+        newsDetailViewController.delegate = self
         navigationController?.pushViewController(newsDetailViewController, animated: true)
     }
 }
 
-extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
+extension NewsViewController: UITableViewDataSource, UITableViewDelegate  {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let news = news else{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        guard let newsArray = newsArray else{
             return 0
         }
         
-        return news.count
+        return newsArray.count
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        let newsViewController = storyboard?.instantiateViewController(withIdentifier: NewsViewController.getViewControllerIdentifier()) as! NewsViewController
-        //        newsViewController.news = categories[indexPath.row].newsArray
-        //        navigationController?.pushViewController(newsViewController, animated: true)
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         
         let cell = (tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.getTableViewCellIdentifier())) as! NewsTableViewCell
-        let new = news![indexPath.row]
+        let new = newsArray![indexPath.row]
         cell.setUpCell(news: new)
         
         return cell
@@ -65,5 +79,13 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+}
+
+extension NewsViewController: NewsDetailTableViewControllerDelegate
+{
+    func addNews(news: News) {
+        newsArray?.append(news)
+        newsTableView.reloadData()
     }
 }
