@@ -10,7 +10,7 @@ import UIKit
 
 protocol NewsViewControllerDelegate: class {
     
-    func addNews(news: [News], type: CategoryType)
+//    func addNews(news: [News], type: CategoryType)
 }
 
 class NewsViewController: UIViewController {
@@ -20,7 +20,7 @@ class NewsViewController: UIViewController {
     weak var delegate: NewsViewControllerDelegate?
     
     var newsArray: [News]?
-    var categoryType: CategoryType?
+//    var categoryType: CategoryType?
     var titleCategory: String?
     
     override func viewDidLoad() {
@@ -32,10 +32,10 @@ class NewsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if let newsArray = newsArray, let categoryType = categoryType
-        {
-            delegate?.addNews(news : newsArray, type: categoryType)
-        }
+//        if let newsArray = newsArray, let categoryType = categoryType
+//        {
+//            delegate?.addNews(news : newsArray, type: categoryType)
+//        }
     }
     
     override func didReceiveMemoryWarning() {

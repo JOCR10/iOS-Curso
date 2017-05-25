@@ -7,18 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
-class News: NSObject {
+
+class News: Object {
     
-    var titleNews: String
-    var descriptionNews: String
-    var createdAt: Date
-    
-    init(titleNews: String, descriptionNews: String, createdAt: Date) {
-        self.titleNews = titleNews
-        self.descriptionNews = descriptionNews
-        self.createdAt = createdAt
-    }
-    
+    dynamic var titleNews = ""
+    dynamic var descriptionNews = ""
+    dynamic var createdAt = NSDate()
+    dynamic var category: Category?
     
 }

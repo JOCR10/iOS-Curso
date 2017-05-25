@@ -7,23 +7,11 @@
 //
 
 import UIKit
+import RealmSwift
 
-enum CategoryType
-{
-    case economy, sports, incidents, technology
-}
-
-class Category: NSObject {
+class Category: Object {
     
-    var name: String
-    var image: UIImage
-    var newsArray: [News]
-    var type: CategoryType
-    
-    init(name: String, image: String, type: CategoryType) {
-        self.name = name
-        self.image = UIImage(named: image)!
-        self.type = type
-        self.newsArray = [News]()
-    }
+    dynamic var name = ""
+    dynamic var image = ""
+    let news = List<News>()
 }

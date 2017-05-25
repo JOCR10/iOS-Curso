@@ -30,12 +30,12 @@ class CategoryViewController: UIViewController {
     
     func initializeCategories() {
         
-        let economyCategory = Category(name: "Economía", image: "economy", type: CategoryType.economy)
-        let incidentCategory = Category(name: "Sucesos", image: "incident" , type: CategoryType.incidents)
-        let sportsCategory = Category(name: "Deportes", image: "sports", type: CategoryType.sports)
-        let technologyCategory = Category(name: "Tecnología", image: "technology", type: CategoryType.technology)
+//        let economyCategory = Category(name: "Economía", image: "economy", type: CategoryType.economy)
+//        let incidentCategory = Category(name: "Sucesos", image: "incident" , type: CategoryType.incidents)
+//        let sportsCategory = Category(name: "Deportes", image: "sports", type: CategoryType.sports)
+//        let technologyCategory = Category(name: "Tecnología", image: "technology", type: CategoryType.technology)
         
-        categories = [economyCategory, incidentCategory, sportsCategory, technologyCategory]
+//        categories = [economyCategory, incidentCategory, sportsCategory, technologyCategory]
     }
 }
 
@@ -47,9 +47,9 @@ extension CategoryViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let newsViewController = storyboard?.instantiateViewController(withIdentifier: NewsViewController.getViewControllerIdentifier()) as! NewsViewController
-        newsViewController.newsArray = categories[indexPath.row].newsArray
+//        newsViewController.newsArray = categories[indexPath.row].newsArray
         newsViewController.titleCategory = categories[indexPath.row].name
-        newsViewController.categoryType = categories[indexPath.row].type
+//        newsViewController.categoryType = categories[indexPath.row].type
         newsViewController.delegate = self
         navigationController?.pushViewController(newsViewController, animated: true)
     }
@@ -68,14 +68,14 @@ extension CategoryViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension CategoryViewController: NewsViewControllerDelegate
 {
-    func addNews(news: [News], type: CategoryType)
-    {
-        let index = categories.index{$0.type == type }
-        if let indexUnwraped = index
-        {
-            let categoryToUpdate = categories[indexUnwraped]
-            categoryToUpdate.newsArray = news
-            categories[indexUnwraped] = categoryToUpdate
-        }
-    }
+//    func addNews(news: [News], type: CategoryType)
+//    {
+//        let index = categories.index{$0.type == type }
+//        if let indexUnwraped = index
+//        {
+//            let categoryToUpdate = categories[indexUnwraped]
+//            categoryToUpdate.newsArray = news
+//            categories[indexUnwraped] = categoryToUpdate
+//        }
+//    }
 }
