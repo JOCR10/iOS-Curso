@@ -64,8 +64,11 @@ class RealmManager: NSObject {
         let news = News()
         news.titleNews = title
         news.descriptionNews = description
-        news.createdAt = Date() as NSDate
-        news.category = category
+        news.createdAt = Date()
+        let realm = try! Realm()
+        try! realm.write {
+            category.news.append(news)
+        }
         addObjectToRealm(realmObject: news)
     }
 

@@ -14,7 +14,7 @@ class News: Object {
     
     dynamic var titleNews = ""
     dynamic var descriptionNews = ""
-    dynamic var createdAt = NSDate()
+    dynamic var createdAt = Date()
     dynamic var category: Category?
     
 }
