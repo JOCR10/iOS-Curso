@@ -12,6 +12,7 @@ import RealmSwift
 class Category: Object {
     
     dynamic var name = ""
-    dynamic var image = ""
+    dynamic var imageName = ""
     let news = List<News>()
+    dynamic var type = 0
 }

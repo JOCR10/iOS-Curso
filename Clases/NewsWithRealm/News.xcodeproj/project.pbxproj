@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BF689136F019D6AFF633CFC /* Pods_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40327E2DCDF1B52A71F00078 /* Pods_News.framework */; };
+		EF2600941ED79A0200AC2A6E /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2600931ED79A0200AC2A6E /* RealmManager.swift */; };
 		EF280F8C1ED501A000274797 /* NewsDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF280F8B1ED501A000274797 /* NewsDetailTableViewController.swift */; };
 		EFEBC73C1ECE65EC00CBB012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBC73B1ECE65EC00CBB012 /* AppDelegate.swift */; };
 		EFEBC7411ECE65EC00CBB012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEBC73F1ECE65EC00CBB012 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		40327E2DCDF1B52A71F00078 /* Pods_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		801354191F167CCD045432D3 /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB64BAEDAC5C72134E08E7B /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
+		EF2600931ED79A0200AC2A6E /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		EF280F8B1ED501A000274797 /* NewsDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailTableViewController.swift; sourceTree = "<group>"; };
 		EFEBC7381ECE65EC00CBB012 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEBC73B1ECE65EC00CBB012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EF2600921ED799C900AC2A6E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EF2600931ED79A0200AC2A6E /* RealmManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		EFEBC72F1ECE65EC00CBB012 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		EFEBC73A1ECE65EC00CBB012 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				EF2600921ED799C900AC2A6E /* Managers */,
 				EFEBC7551ECE734B00CBB012 /* Extensions */,
 				EFEBC74E1ECE71C300CBB012 /* News */,
 				EFEBC74D1ECE71AE00CBB012 /* Categories */,
@@ -284,6 +295,7 @@
 				EFEBC7571ECE750900CBB012 /* News.swift in Sources */,
 				EFEBC75D1ECE7BD100CBB012 /* CategoryTableViewCell.swift in Sources */,
 				EFEBC7541ECE72F400CBB012 /* Helper.swift in Sources */,
+				EF2600941ED79A0200AC2A6E /* RealmManager.swift in Sources */,
 				EF280F8C1ED501A000274797 /* NewsDetailTableViewController.swift in Sources */,
 				EFEBC7591ECE751A00CBB012 /* Category.swift in Sources */,
 			);

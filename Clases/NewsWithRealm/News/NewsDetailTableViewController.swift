@@ -7,25 +7,22 @@
 //
 
 import UIKit
-
-protocol NewsDetailTableViewControllerDelegate: class {
-    
-    func addNews(news : News)
-}
+import RealmSwift
 
 class NewsDetailTableViewController: UITableViewController {
     
     @IBOutlet weak var textViewDescription: UITextView!
     @IBOutlet weak var textFieldName: UITextField!
     
-    weak var delegate : NewsDetailTableViewControllerDelegate?
+    var categoryType = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addSaveNews()
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
     }
     
@@ -37,8 +34,7 @@ class NewsDetailTableViewController: UITableViewController {
     
     func saveNewsAction()
     {
-//        let news = News(titleNews: textFieldName.text!, descriptionNews: textViewDescription.text!, createdAt: Date())
-//        delegate?.addNews(news: news)
+        RealmManager.createNews(categoryType: categoryType, title: textFieldName.text!, description: textViewDescription.text!)
         navigationController?.popViewController(animated: true)
     }
 }

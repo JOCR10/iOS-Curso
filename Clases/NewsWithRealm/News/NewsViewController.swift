@@ -7,55 +7,53 @@
 //
 
 import UIKit
-
-protocol NewsViewControllerDelegate: class {
-    
-//    func addNews(news: [News], type: CategoryType)
-}
+import RealmSwift
 
 class NewsViewController: UIViewController {
     
     @IBOutlet weak var newsTableView: UITableView!
-    
-    weak var delegate: NewsViewControllerDelegate?
-    
-    var newsArray: [News]?
-//    var categoryType: CategoryType?
+        
+    var newsArray: List<News>?
+    var categoryType = 0
     var titleCategory: String?
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         newsTableView.registerCustomCell(identifier: NewsTableViewCell.getTableViewCellIdentifier())
         self.title = titleCategory!
         createdAddButton()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool)
+    {
         super.viewWillAppear(animated)
-//        if let newsArray = newsArray, let categoryType = categoryType
-//        {
-//            delegate?.addNews(news : newsArray, type: categoryType)
-//        }
+        newsArray = RealmManager.getAllNews(categoryType: categoryType)
+        newsTableView.reloadData()
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
     }
     
-    func createdAddButton(){
+    func createdAddButton()
+    {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add , target: self, action: #selector(addAction))
         navigationItem.rightBarButtonItem = addButton
     }
     
-    func addAction(){
+    func addAction()
+    {
         
         let newsDetailViewController = storyboard!.instantiateViewController(withIdentifier: NewsDetailTableViewController.getViewControllerIdentifier()) as! NewsDetailTableViewController
-        newsDetailViewController.delegate = self
+        newsDetailViewController.categoryType = categoryType
         navigationController?.pushViewController(newsDetailViewController, animated: true)
     }
 }
 
-extension NewsViewController: UITableViewDataSource, UITableViewDelegate  {
+extension NewsViewController: UITableViewDataSource, UITableViewDelegate
+{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -65,7 +63,6 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate  {
         
         return newsArray.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -77,15 +74,8 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate  {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
         return 100
-    }
-}
-
-extension NewsViewController: NewsDetailTableViewControllerDelegate
-{
-    func addNews(news: News) {
-        newsArray?.append(news)
-        newsTableView.reloadData()
     }
 }
