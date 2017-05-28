@@ -46,7 +46,7 @@
         <scene sceneID="PeL-n9-NSn">
             <objects>
                 <tableViewController storyboardIdentifier="AddDogViewController" id="Ogd-fZ-mIh" customClass="AddDogViewController" customModule="TareaDogsWithRealm" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gak-oe-xxr">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gak-oe-xxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.26701552350000002" blue="0.72240401330000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

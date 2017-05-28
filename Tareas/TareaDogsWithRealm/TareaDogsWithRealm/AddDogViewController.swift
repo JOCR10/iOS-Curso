@@ -18,7 +18,7 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
     
     var imagePicker = UIImagePickerController()
     
-    var dogImage: String?
+    var dogImage = ""
     
     override func viewDidLoad()
     {
@@ -39,14 +39,27 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
     
     func saveNewsAction()
     {
-        if nombreTextField.text!.characters.count > 0 && colorTextField.text!.characters.count > 0 {
-            RealmManager.createDog(name: nombreTextField.text!, color: colorTextField.text!, image: dogImage!)
+        if nombreTextField.text!.characters.count > 0 && colorTextField.text!.characters.count > 0 && dogImage.characters.count > 0
+        {
+            RealmManager.createDog(name: nombreTextField.text!, color: colorTextField.text!, image: dogImage)
             navigationController?.popViewController(animated: true)
         }
         else
         {
-            
+            mostrarAlerta(msj: "Debe digitar el nombre y el color del perro, y además seleccionar una imagen", titulo: "Alerta")
         }
+    }
+    
+    func mostrarAlerta(msj: String, titulo: String){
+        
+        let alertController = UIAlertController(title: titulo, message: msj, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alertController.addAction(action)
+        
+        present(alertController, animated: true, completion: nil)
+        
     }
     
     @IBAction func examinarButton(_ sender: Any) {
@@ -74,8 +87,7 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         
         do
         {
-            try data?.write(to: localPath!, options: Data.WritingOptions.atomic)
-            dogImage = imageName
+            dogImage = imageUrl.absoluteString!
         }
         catch
         {

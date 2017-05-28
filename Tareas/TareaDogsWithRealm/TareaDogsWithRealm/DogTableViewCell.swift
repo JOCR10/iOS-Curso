@@ -28,7 +28,8 @@ class DogTableViewCell: UITableViewCell {
     {
         colorLabel.text = dog.color
         nameLabel.text = dog.name
-        dogImageView.image = UIImage(named: dog.imageName)
+        let imageUrl:URL = URL(string: dog.imageName)!
+        let imageData:NSData = NSData(contentsOf: imageUrl)!
+        dogImageView.image = UIImage(data: imageData as Data)
     }
-    
 }
