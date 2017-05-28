@@ -68,10 +68,11 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         {
             print("Button capture")
             imagePicker.delegate = self
-            imagePicker.sourceType = .savedPhotosAlbum;
+            imagePicker.sourceType = .savedPhotosAlbum
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
@@ -81,19 +82,9 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         let photoURL          = NSURL(fileURLWithPath: documentDirectory)
         let localPath         = photoURL.appendingPathComponent(imageName!)
         let image             = info[UIImagePickerControllerOriginalImage]as! UIImage
-        let data              = UIImagePNGRepresentation(image)
         
         dogImageView.image = image
-        
-        do
-        {
-            dogImage = imageUrl.absoluteString!
-        }
-        catch
-        {
-            // Catch exception here and act accordingly
-        }
-        
+        dogImage = imageName!
         self.dismiss(animated: true, completion: nil);
     }
     
