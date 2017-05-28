@@ -11,16 +11,16 @@ import RealmSwift
 
 class RealmManager: NSObject {
     
-        class func getAllDogs() -> Results<Dog>?
+    class func getAllDogs() -> Results<Dog>?
+    {
+        let realm = try! Realm()
+        let dogs = realm.objects(Dog.self)
+        if dogs.count > 0
         {
-            let realm = try! Realm()
-            let dogs = realm.objects(Dog.self)
-            if dogs.count > 0
-            {
-                return dogs
-            }
-            return nil
+            return dogs
         }
+        return nil
+    }
     
     private class func addObjectToRealm(realmObject: Object)
     {
@@ -42,18 +42,13 @@ class RealmManager: NSObject {
     //        return getCategory(type: categoryType).news
     //    }
     
-//    class func createNews(categoryType: Int, title: String, description: String )
-//    {
-//        //        let category = getCategory(type: categoryType)
-//        //        let news = News()
-//        news.titleNews = title
-//        news.descriptionNews = description
-//        news.createdAt = Date()
-//        let realm = try! Realm()
-//        try! realm.write {
-//            category.news.append(news)
-//        }
-//        addObjectToRealm(realmObject: news)
-//    }
+    class func createDog(name: String, color: String, image: String )
+    {
+        let dog = Dog()
+        dog.name = name
+        dog.color = color
+        dog.imageName = image
+        addObjectToRealm(realmObject: dog)
+    }
     
 }
