@@ -23,7 +23,7 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        addSaveNews()
+        addSaveDogs()
     }
     
     override func didReceiveMemoryWarning()
@@ -31,13 +31,13 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         super.didReceiveMemoryWarning()
     }
     
-    func addSaveNews()
+    func addSaveDogs()
     {
-        let saveAction = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveNewsAction))
+        let saveAction = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveDogsAction))
         navigationItem.rightBarButtonItem = saveAction
     }
     
-    func saveNewsAction()
+    func saveDogsAction()
     {
         if nombreTextField.text!.characters.count > 0 && colorTextField.text!.characters.count > 0 && dogImage.characters.count > 0
         {
@@ -68,7 +68,7 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         {
             print("Button capture")
             imagePicker.delegate = self
-            imagePicker.sourceType = .savedPhotosAlbum
+            imagePicker.sourceType = .photoLibrary
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
@@ -84,7 +84,7 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         let image             = info[UIImagePickerControllerOriginalImage]as! UIImage
         
         dogImageView.image = image
-        dogImage = imageName!
+        dogImage = localPath!.absoluteURL.absoluteString
         self.dismiss(animated: true, completion: nil);
     }
     

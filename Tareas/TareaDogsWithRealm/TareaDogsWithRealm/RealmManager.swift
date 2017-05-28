@@ -17,7 +17,7 @@ class RealmManager: NSObject {
         let dogs = realm.objects(Dog.self)
         if dogs.count > 0
         {
-            return dogs
+            return dogs.sorted(byKeyPath: "orden", ascending: false)
         }
         return nil
     }
@@ -30,24 +30,18 @@ class RealmManager: NSObject {
         }
     }
     
-    //    private class func getCategory(type: Int ) -> Category
-    //    {
-    //        let realm = try! Realm()
-    //        let predicate = NSPredicate(format: "type = %d", type)
-    //        return realm.objects(Category.self).filter(predicate).first!
-    //    }
-    
-    //    class func getAllNews(categoryType : Int) -> List<News>?
-    //    {
-    //        return getCategory(type: categoryType).news
-    //    }
-    
     class func createDog(name: String, color: String, image: String )
     {
         let dog = Dog()
+        var orden = 1
         dog.name = name
         dog.color = color
         dog.imageName = image
+        if let dogs = getAllDogs()
+        {
+            orden = dogs.count + 1
+        }
+        dog.orden = orden
         addObjectToRealm(realmObject: dog)
     }
     

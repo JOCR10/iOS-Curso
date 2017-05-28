@@ -56,8 +56,6 @@ class DogsViewController: UIViewController {
 
 extension DogsViewController : UITableViewDataSource, UITableViewDelegate
 {
-   
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         guard let dogs = dogs else

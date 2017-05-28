@@ -70,7 +70,5 @@ class DogTableViewCell: UITableViewCell {
         }
         
         return image
-        
     }
-    
 }

@@ -14,6 +14,6 @@ class Dog: Object {
     dynamic var name = ""
     dynamic var imageName = ""
     dynamic var color = ""
-    dynamic var order = 0
+    dynamic var orden = 0
 
 }
