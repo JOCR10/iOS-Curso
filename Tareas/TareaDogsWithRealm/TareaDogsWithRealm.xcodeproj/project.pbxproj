@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02C4095E5BF4426BC601E652 /* Pods_TareaDogsWithRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CE1CF40C7777FFCBA4069E /* Pods_TareaDogsWithRealm.framework */; };
+		EFFBD8361EDA288E00BB8164 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD8351EDA288E00BB8164 /* AppDelegate.swift */; };
+		EFFBD83D1EDA288E00BB8164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFBD83C1EDA288E00BB8164 /* Assets.xcassets */; };
+		EFFBD8491EDA2E1600BB8164 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD8481EDA2E1600BB8164 /* RealmManager.swift */; };
+		EFFBD84B1EDA3BCF00BB8164 /* DogsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFBD84A1EDA3BCF00BB8164 /* DogsStoryboard.storyboard */; };
+		EFFBD84D1EDA456C00BB8164 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD84C1EDA456C00BB8164 /* Dog.swift */; };
+		EFFBD84F1EDA45D000BB8164 /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD84E1EDA45D000BB8164 /* DogsViewController.swift */; };
+		EFFBD8511EDA45DE00BB8164 /* AddDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD8501EDA45DE00BB8164 /* AddDogViewController.swift */; };
+		EFFBD8541EDA526400BB8164 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD8531EDA526400BB8164 /* Helper.swift */; };
+		EFFBD8581EDA539A00BB8164 /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD8561EDA539A00BB8164 /* DogTableViewCell.swift */; };
+		EFFBD8591EDA539A00BB8164 /* DogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFFBD8571EDA539A00BB8164 /* DogTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		403F3EEBAD30B30CD93D63C0 /* Pods-TareaDogsWithRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TareaDogsWithRealm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TareaDogsWithRealm/Pods-TareaDogsWithRealm.debug.xcconfig"; sourceTree = "<group>"; };
+		A4CE1CF40C7777FFCBA4069E /* Pods_TareaDogsWithRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TareaDogsWithRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFBD8321EDA288E00BB8164 /* TareaDogsWithRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TareaDogsWithRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFBD8351EDA288E00BB8164 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFFBD83C1EDA288E00BB8164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFFBD8411EDA288E00BB8164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFBD8481EDA2E1600BB8164 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		EFFBD84A1EDA3BCF00BB8164 /* DogsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DogsStoryboard.storyboard; sourceTree = "<group>"; };
+		EFFBD84C1EDA456C00BB8164 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		EFFBD84E1EDA45D000BB8164 /* DogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsViewController.swift; sourceTree = "<group>"; };
+		EFFBD8501EDA45DE00BB8164 /* AddDogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDogViewController.swift; sourceTree = "<group>"; };
+		EFFBD8531EDA526400BB8164 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EFFBD8561EDA539A00BB8164 /* DogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
+		EFFBD8571EDA539A00BB8164 /* DogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogTableViewCell.xib; sourceTree = "<group>"; };
+		F8AC063CEA511A0CCC68C9B6 /* Pods-TareaDogsWithRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TareaDogsWithRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-TareaDogsWithRealm/Pods-TareaDogsWithRealm.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFFBD82F1EDA288E00BB8164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C4095E5BF4426BC601E652 /* Pods_TareaDogsWithRealm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAE0C4CE08FA836157C5F0DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE1CF40C7777FFCBA4069E /* Pods_TareaDogsWithRealm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFFBD8291EDA288E00BB8164 = {
+			isa = PBXGroup;
+			children = (
+				EFFBD8341EDA288E00BB8164 /* TareaDogsWithRealm */,
+				EFFBD8331EDA288E00BB8164 /* Products */,
+				F0F9917BF4B2649C737B7969 /* Pods */,
+				EAE0C4CE08FA836157C5F0DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EFFBD8331EDA288E00BB8164 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBD8321EDA288E00BB8164 /* TareaDogsWithRealm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFFBD8341EDA288E00BB8164 /* TareaDogsWithRealm */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBD8551EDA537F00BB8164 /* CustomCell */,
+				EFFBD8521EDA525500BB8164 /* Extensions */,
+				EFFBD8471EDA2DF200BB8164 /* Managers */,
+				EFFBD8351EDA288E00BB8164 /* AppDelegate.swift */,
+				EFFBD83C1EDA288E00BB8164 /* Assets.xcassets */,
+				EFFBD8411EDA288E00BB8164 /* Info.plist */,
+				EFFBD84A1EDA3BCF00BB8164 /* DogsStoryboard.storyboard */,
+				EFFBD84C1EDA456C00BB8164 /* Dog.swift */,
+				EFFBD84E1EDA45D000BB8164 /* DogsViewController.swift */,
+				EFFBD8501EDA45DE00BB8164 /* AddDogViewController.swift */,
+			);
+			path = TareaDogsWithRealm;
+			sourceTree = "<group>";
+		};
+		EFFBD8471EDA2DF200BB8164 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBD8481EDA2E1600BB8164 /* RealmManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		EFFBD8521EDA525500BB8164 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBD8531EDA526400BB8164 /* Helper.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EFFBD8551EDA537F00BB8164 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBD8561EDA539A00BB8164 /* DogTableViewCell.swift */,
+				EFFBD8571EDA539A00BB8164 /* DogTableViewCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		F0F9917BF4B2649C737B7969 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				403F3EEBAD30B30CD93D63C0 /* Pods-TareaDogsWithRealm.debug.xcconfig */,
+				F8AC063CEA511A0CCC68C9B6 /* Pods-TareaDogsWithRealm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFFBD8311EDA288E00BB8164 /* TareaDogsWithRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFBD8441EDA288E00BB8164 /* Build configuration list for PBXNativeTarget "TareaDogsWithRealm" */;
+			buildPhases = (
+				B85B399E18E864EA8CEBABF3 /* [CP] Check Pods Manifest.lock */,
+				EFFBD82E1EDA288E00BB8164 /* Sources */,
+				EFFBD82F1EDA288E00BB8164 /* Frameworks */,
+				EFFBD8301EDA288E00BB8164 /* Resources */,
+				6ED0724B7B23049BC8F48422 /* [CP] Embed Pods Frameworks */,
+				F342CAED304D7DF7324C9580 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TareaDogsWithRealm;
+			productName = TareaDogsWithRealm;
+			productReference = EFFBD8321EDA288E00BB8164 /* TareaDogsWithRealm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFFBD82A1EDA288E00BB8164 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Local User";
+				TargetAttributes = {
+					EFFBD8311EDA288E00BB8164 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EFFBD82D1EDA288E00BB8164 /* Build configuration list for PBXProject "TareaDogsWithRealm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFFBD8291EDA288E00BB8164;
+			productRefGroup = EFFBD8331EDA288E00BB8164 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFFBD8311EDA288E00BB8164 /* TareaDogsWithRealm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFFBD8301EDA288E00BB8164 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFBD8591EDA539A00BB8164 /* DogTableViewCell.xib in Resources */,
+				EFFBD84B1EDA3BCF00BB8164 /* DogsStoryboard.storyboard in Resources */,
+				EFFBD83D1EDA288E00BB8164 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6ED0724B7B23049BC8F48422 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TareaDogsWithRealm/Pods-TareaDogsWithRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B85B399E18E864EA8CEBABF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F342CAED304D7DF7324C9580 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TareaDogsWithRealm/Pods-TareaDogsWithRealm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFFBD82E1EDA288E00BB8164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFBD8361EDA288E00BB8164 /* AppDelegate.swift in Sources */,
+				EFFBD8491EDA2E1600BB8164 /* RealmManager.swift in Sources */,
+				EFFBD8581EDA539A00BB8164 /* DogTableViewCell.swift in Sources */,
+				EFFBD84D1EDA456C00BB8164 /* Dog.swift in Sources */,
+				EFFBD8511EDA45DE00BB8164 /* AddDogViewController.swift in Sources */,
+				EFFBD84F1EDA45D000BB8164 /* DogsViewController.swift in Sources */,
+				EFFBD8541EDA526400BB8164 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EFFBD8421EDA288E00BB8164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFFBD8431EDA288E00BB8164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFFBD8451EDA288E00BB8164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403F3EEBAD30B30CD93D63C0 /* Pods-TareaDogsWithRealm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TareaDogsWithRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMPESA.TareaDogsWithRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EFFBD8461EDA288E00BB8164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8AC063CEA511A0CCC68C9B6 /* Pods-TareaDogsWithRealm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TareaDogsWithRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMPESA.TareaDogsWithRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFFBD82D1EDA288E00BB8164 /* Build configuration list for PBXProject "TareaDogsWithRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFBD8421EDA288E00BB8164 /* Debug */,
+				EFFBD8431EDA288E00BB8164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFBD8441EDA288E00BB8164 /* Build configuration list for PBXNativeTarget "TareaDogsWithRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFBD8451EDA288E00BB8164 /* Debug */,
+				EFFBD8461EDA288E00BB8164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFFBD82A1EDA288E00BB8164 /* Project object */;
+}
