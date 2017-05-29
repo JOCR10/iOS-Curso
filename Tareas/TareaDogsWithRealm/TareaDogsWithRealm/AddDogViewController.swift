@@ -79,12 +79,12 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         let imageUrl          = info[UIImagePickerControllerReferenceURL] as! NSURL
         let imageName         = imageUrl.lastPathComponent
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-        let photoURL          = NSURL(fileURLWithPath: documentDirectory)
-        let localPath         = photoURL.appendingPathComponent(imageName!)
+        let photoURL          = URL(fileURLWithPath: documentDirectory).appendingPathComponent(imageName!).path
+        //let localPath         = photoURL.appendingPathComponent(imageName!)
         let image             = info[UIImagePickerControllerOriginalImage]as! UIImage
         
         dogImageView.image = image
-        dogImage = localPath!.absoluteURL.absoluteString
+        dogImage = photoURL
         self.dismiss(animated: true, completion: nil);
     }
     

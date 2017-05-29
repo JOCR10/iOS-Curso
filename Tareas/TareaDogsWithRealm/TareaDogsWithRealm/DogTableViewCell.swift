@@ -29,46 +29,36 @@ class DogTableViewCell: UITableViewCell {
     {
         colorLabel.text = dog.color
         nameLabel.text = dog.name
-        
-        dogImageView.image = loadImage(imageName: dog.imageName)
+        dogImageView.image = UIImage(contentsOfFile: dog.imageName)
+//        saveImageDocumentDirectory(imageName: dog.imageName)
+//        getImage(imageName: dog.imageName)
     }
     
-    func fileInDocumentsDirectory(_ filename: String) -> String {
-        
-        let fileURL = getDocumentsURL().appendingPathComponent(filename)
-        return fileURL.path
-        
+    func saveImageDocumentDirectory(imageName : String)
+    {
+        let fileManager = FileManager.default
+        let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
+        let image = UIImage(contentsOfFile: imageName)
+        print(paths)
+        let imageData = UIImageJPEGRepresentation(image!, 0.5)
+        fileManager.createFile(atPath: paths as String, contents: imageData, attributes: nil)
     }
     
-    func getDocumentsURL() -> URL {
-        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        return documentsURL
+    func getDirectoryPath() -> String
+    {
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
     }
     
-    func loadImage(imageName : String) -> UIImage? {
-        
-        // Get the image back
-        let imageName:String = imageName  // Or whatever name you saved
-        let imagePath = fileInDocumentsDirectory(imageName)
-        
-        if let loadedImage = self.loadImageFromPath(imagePath) {
-            return loadedImage
-        } else {
-            print("Couldn't Load: \(imageName)")
-            return nil
+    func getImage(imageName : String)
+    {
+        let fileManager = FileManager.default
+        let imagePAth = (self.getDirectoryPath() as NSString).appendingPathComponent(imageName)
+        if fileManager.fileExists(atPath: imagePAth){
+            self.dogImageView.image = UIImage(contentsOfFile: imagePAth)
+        }else{
+            print("No Image")
         }
-        
-    }
-    
-    func loadImageFromPath(_ path: String) -> UIImage? {
-        
-        let image = UIImage(contentsOfFile: path)
-        
-        if image == nil {
-            
-            print("couldn't find image at path: \(path)")
-        }
-        
-        return image
     }
 }
