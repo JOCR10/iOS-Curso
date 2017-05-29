@@ -80,11 +80,22 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         let imageName         = imageUrl.lastPathComponent
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         let photoURL          = URL(fileURLWithPath: documentDirectory).appendingPathComponent(imageName!).path
-        //let localPath         = photoURL.appendingPathComponent(imageName!)
         let image             = info[UIImagePickerControllerOriginalImage]as! UIImage
         
         dogImageView.image = image
         dogImage = photoURL
+        
+        let fileManager = FileManager.default
+        if fileManager.fileExists(atPath: photoURL){
+            do {
+                try fileManager.removeItem(atPath: photoURL)
+            }
+            catch let error as NSError {
+                print("Ooops! Something went wrong: \(error)")
+            }
+        }
+        let imageData = UIImageJPEGRepresentation(image, 0.5)
+        fileManager.createFile(atPath: photoURL as String, contents: imageData, attributes: nil)
         self.dismiss(animated: true, completion: nil);
     }
     

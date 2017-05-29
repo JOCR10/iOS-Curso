@@ -30,7 +30,7 @@ class RealmManager: NSObject {
         }
     }
     
-    class func createDog(name: String, color: String, image: String )
+    class func createDog(name: String, color: String, image: String)
     {
         let dog = Dog()
         var orden = 1
