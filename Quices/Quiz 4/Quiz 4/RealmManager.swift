@@ -36,7 +36,7 @@ class RealmManager: NSObject {
         return realm.objects(Cat.self).filter(predicate).first
     }
     
-    class func  catExists(name : String) -> Bool
+    class func catExists(name : String) -> Bool
     {
         if let _ = getCat(name: name)
         {

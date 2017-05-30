@@ -30,16 +30,15 @@ class AddCatViewController: UIViewController {
     
     func saveCatsAction()
     {
-        if !RealmManager.catExists(name: nameTexField.text!)
+        if RealmManager.catExists(name: nameTexField.text!)
+        {
+            mostrarAlerta(msj: "El elemento ya existe", titulo: "Atención")
+        }
+        else
         {
             RealmManager.createCat(name: nameTexField.text!)
             navigationController?.popViewController(animated: true)
         }
-        else
-        {
-            mostrarAlerta(msj: "El elemento ya existe", titulo: "Atención")
-        }
-        
     }
     
     func mostrarAlerta(msj: String, titulo: String){
