@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		631C22C7F4A5A6F3D9F3F3BD /* Pods_Quiz_4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CC614057FC6C11FD62DD8F /* Pods_Quiz_4.framework */; };
+		EFB838FF1EDE255A00D56DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB838FE1EDE255A00D56DA7 /* AppDelegate.swift */; };
+		EFB839011EDE255A00D56DA7 /* CatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB839001EDE255A00D56DA7 /* CatListViewController.swift */; };
+		EFB839041EDE255A00D56DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB839021EDE255A00D56DA7 /* Main.storyboard */; };
+		EFB839061EDE255A00D56DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB839051EDE255A00D56DA7 /* Assets.xcassets */; };
+		EFB839131EDE26E700D56DA7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB839121EDE26E700D56DA7 /* Helper.swift */; };
+		EFB839151EDE272000D56DA7 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB839141EDE272000D56DA7 /* Cat.swift */; };
+		EFB839171EDE27BD00D56DA7 /* AddCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB839161EDE27BD00D56DA7 /* AddCatViewController.swift */; };
+		EFB8391B1EDE281800D56DA7 /* CatCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB839191EDE281800D56DA7 /* CatCustomTableViewCell.swift */; };
+		EFB8391C1EDE281800D56DA7 /* CatCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB8391A1EDE281800D56DA7 /* CatCustomTableViewCell.xib */; };
+		EFB8391F1EDE2A5000D56DA7 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB8391E1EDE2A5000D56DA7 /* RealmManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26CC614057FC6C11FD62DD8F /* Pods_Quiz_4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quiz_4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C963A4F69A6BF67231E3665 /* Pods-Quiz 4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz 4.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz 4/Pods-Quiz 4.release.xcconfig"; sourceTree = "<group>"; };
+		DF32139D890DA49C0D466A11 /* Pods-Quiz 4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz 4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz 4/Pods-Quiz 4.debug.xcconfig"; sourceTree = "<group>"; };
+		EFB838FB1EDE255A00D56DA7 /* Quiz 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB838FE1EDE255A00D56DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFB839001EDE255A00D56DA7 /* CatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListViewController.swift; sourceTree = "<group>"; };
+		EFB839031EDE255A00D56DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFB839051EDE255A00D56DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFB8390A1EDE255A00D56DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB839121EDE26E700D56DA7 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EFB839141EDE272000D56DA7 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		EFB839161EDE27BD00D56DA7 /* AddCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCatViewController.swift; sourceTree = "<group>"; };
+		EFB839191EDE281800D56DA7 /* CatCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatCustomTableViewCell.swift; sourceTree = "<group>"; };
+		EFB8391A1EDE281800D56DA7 /* CatCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatCustomTableViewCell.xib; sourceTree = "<group>"; };
+		EFB8391E1EDE2A5000D56DA7 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFB838F81EDE255A00D56DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631C22C7F4A5A6F3D9F3F3BD /* Pods_Quiz_4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12F8BDE229CF21181DC38699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26CC614057FC6C11FD62DD8F /* Pods_Quiz_4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A32BDCFD98D2088101B5BF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF32139D890DA49C0D466A11 /* Pods-Quiz 4.debug.xcconfig */,
+				3C963A4F69A6BF67231E3665 /* Pods-Quiz 4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFB838F21EDE255A00D56DA7 = {
+			isa = PBXGroup;
+			children = (
+				EFB838FD1EDE255A00D56DA7 /* Quiz 4 */,
+				EFB838FC1EDE255A00D56DA7 /* Products */,
+				3A32BDCFD98D2088101B5BF4 /* Pods */,
+				12F8BDE229CF21181DC38699 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EFB838FC1EDE255A00D56DA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFB838FB1EDE255A00D56DA7 /* Quiz 4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB838FD1EDE255A00D56DA7 /* Quiz 4 */ = {
+			isa = PBXGroup;
+			children = (
+				EFB8391D1EDE2A3800D56DA7 /* Manager */,
+				EFB839181EDE27FF00D56DA7 /* CustomCell */,
+				EFB839111EDE26B600D56DA7 /* Extension */,
+				EFB838FE1EDE255A00D56DA7 /* AppDelegate.swift */,
+				EFB839001EDE255A00D56DA7 /* CatListViewController.swift */,
+				EFB839021EDE255A00D56DA7 /* Main.storyboard */,
+				EFB839051EDE255A00D56DA7 /* Assets.xcassets */,
+				EFB8390A1EDE255A00D56DA7 /* Info.plist */,
+				EFB839141EDE272000D56DA7 /* Cat.swift */,
+				EFB839161EDE27BD00D56DA7 /* AddCatViewController.swift */,
+			);
+			path = "Quiz 4";
+			sourceTree = "<group>";
+		};
+		EFB839111EDE26B600D56DA7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFB839121EDE26E700D56DA7 /* Helper.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		EFB839181EDE27FF00D56DA7 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFB839191EDE281800D56DA7 /* CatCustomTableViewCell.swift */,
+				EFB8391A1EDE281800D56DA7 /* CatCustomTableViewCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		EFB8391D1EDE2A3800D56DA7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EFB8391E1EDE2A5000D56DA7 /* RealmManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB838FA1EDE255A00D56DA7 /* Quiz 4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB8390D1EDE255A00D56DA7 /* Build configuration list for PBXNativeTarget "Quiz 4" */;
+			buildPhases = (
+				8672A408A34A1B65A49B8DF7 /* [CP] Check Pods Manifest.lock */,
+				EFB838F71EDE255A00D56DA7 /* Sources */,
+				EFB838F81EDE255A00D56DA7 /* Frameworks */,
+				EFB838F91EDE255A00D56DA7 /* Resources */,
+				9B4676B1B3496E5CA5714E23 /* [CP] Embed Pods Frameworks */,
+				EE9D1AD8FCD4A2940BB7A4E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quiz 4";
+			productName = "Quiz 4";
+			productReference = EFB838FB1EDE255A00D56DA7 /* Quiz 4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFB838F31EDE255A00D56DA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Local User";
+				TargetAttributes = {
+					EFB838FA1EDE255A00D56DA7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EFB838F61EDE255A00D56DA7 /* Build configuration list for PBXProject "Quiz 4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFB838F21EDE255A00D56DA7;
+			productRefGroup = EFB838FC1EDE255A00D56DA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB838FA1EDE255A00D56DA7 /* Quiz 4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFB838F91EDE255A00D56DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB839061EDE255A00D56DA7 /* Assets.xcassets in Resources */,
+				EFB839041EDE255A00D56DA7 /* Main.storyboard in Resources */,
+				EFB8391C1EDE281800D56DA7 /* CatCustomTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8672A408A34A1B65A49B8DF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B4676B1B3496E5CA5714E23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiz 4/Pods-Quiz 4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9D1AD8FCD4A2940BB7A4E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiz 4/Pods-Quiz 4-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFB838F71EDE255A00D56DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB839151EDE272000D56DA7 /* Cat.swift in Sources */,
+				EFB839171EDE27BD00D56DA7 /* AddCatViewController.swift in Sources */,
+				EFB839011EDE255A00D56DA7 /* CatListViewController.swift in Sources */,
+				EFB838FF1EDE255A00D56DA7 /* AppDelegate.swift in Sources */,
+				EFB8391F1EDE2A5000D56DA7 /* RealmManager.swift in Sources */,
+				EFB839131EDE26E700D56DA7 /* Helper.swift in Sources */,
+				EFB8391B1EDE281800D56DA7 /* CatCustomTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFB839021EDE255A00D56DA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB839031EDE255A00D56DA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFB8390B1EDE255A00D56DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFB8390C1EDE255A00D56DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFB8390E1EDE255A00D56DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF32139D890DA49C0D466A11 /* Pods-Quiz 4.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Quiz 4/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IMPESA.Quiz-4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EFB8390F1EDE255A00D56DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C963A4F69A6BF67231E3665 /* Pods-Quiz 4.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Quiz 4/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IMPESA.Quiz-4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFB838F61EDE255A00D56DA7 /* Build configuration list for PBXProject "Quiz 4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB8390B1EDE255A00D56DA7 /* Debug */,
+				EFB8390C1EDE255A00D56DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB8390D1EDE255A00D56DA7 /* Build configuration list for PBXNativeTarget "Quiz 4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB8390E1EDE255A00D56DA7 /* Debug */,
+				EFB8390F1EDE255A00D56DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFB838F31EDE255A00D56DA7 /* Project object */;
+}
