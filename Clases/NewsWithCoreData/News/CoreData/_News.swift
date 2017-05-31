@@ -8,6 +8,7 @@ public enum NewsAttributes: String {
     case createdAt = "createdAt"
     case descriptionNews = "descriptionNews"
     case title = "title"
+    case type = "type"
 }
 
 public enum NewsRelationships: String {
@@ -47,6 +48,9 @@ open class _News: NSManagedObject {
 
     @NSManaged open
     var title: String?
+
+    @NSManaged open
+    var type: NSNumber?
 
     // MARK: - Relationships
 
