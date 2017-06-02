@@ -10,6 +10,7 @@
 		8140DCD3B2E77C971D95CAB5 /* Pods_Translate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B35E8E21C12F460498C1D92 /* Pods_Translate.framework */; };
 		EF42DE051EE0E0AB00274C37 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42DE041EE0E0AB00274C37 /* APIManager.swift */; };
 		EF42DE071EE0E0F300274C37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42DE061EE0E0F300274C37 /* Constants.swift */; };
+		EF42DE091EE0F9EB00274C37 /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42DE081EE0F9EB00274C37 /* LanguagesViewController.swift */; };
 		EFB6BB411EDE52930019F73F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6BB401EDE52930019F73F /* AppDelegate.swift */; };
 		EFB6BB431EDE52930019F73F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6BB421EDE52930019F73F /* ViewController.swift */; };
 		EFB6BB461EDE52930019F73F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB6BB441EDE52930019F73F /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		AE2BAFE0C33ED3B7025FC3F4 /* Pods-Translate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Translate/Pods-Translate.debug.xcconfig"; sourceTree = "<group>"; };
 		EF42DE041EE0E0AB00274C37 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		EF42DE061EE0E0F300274C37 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF42DE081EE0F9EB00274C37 /* LanguagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
 		EFB6BB3D1EDE52930019F73F /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB6BB401EDE52930019F73F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB6BB421EDE52930019F73F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				EFB6BB4C1EDE52930019F73F /* Info.plist */,
 				EF42DE041EE0E0AB00274C37 /* APIManager.swift */,
 				EF42DE061EE0E0F300274C37 /* Constants.swift */,
+				EF42DE081EE0F9EB00274C37 /* LanguagesViewController.swift */,
 			);
 			path = Translate;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				EF42DE051EE0E0AB00274C37 /* APIManager.swift in Sources */,
 				EFB6BB431EDE52930019F73F /* ViewController.swift in Sources */,
 				EFB6BB411EDE52930019F73F /* AppDelegate.swift in Sources */,
+				EF42DE091EE0F9EB00274C37 /* LanguagesViewController.swift in Sources */,
 				EF42DE071EE0E0F300274C37 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

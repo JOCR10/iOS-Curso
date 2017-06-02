@@ -11,4 +11,5 @@ target 'Translate' do
 pod 'NVActivityIndicatorView'
 pod 'Alamofire'
 
+
 end

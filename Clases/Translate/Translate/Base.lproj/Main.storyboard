@@ -38,7 +38,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANF-q5-WId" customClass="UIControl">
                                                 <rect key="frame" x="25" y="0.0" width="112.5" height="80"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y1M-Eh-wpn">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y1M-Eh-wpn">
                                                         <rect key="frame" x="10" y="10" width="92.5" height="60"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="100"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,7 +80,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJF-ax-BCy" customClass="UIControl">
                                                 <rect key="frame" x="237.5" y="0.0" width="112.5" height="80"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lx4-C6-rUm">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lx4-C6-rUm">
                                                         <rect key="frame" x="10" y="10" width="92.5" height="60"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="100"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,12 +179,94 @@
                     </view>
                     <connections>
                         <outlet property="destinationText" destination="DL8-6N-Y3W" id="tdf-g6-YM1"/>
+                        <outlet property="destinoLabel" destination="Lx4-C6-rUm" id="zub-An-qdf"/>
+                        <outlet property="origenLabel" destination="Y1M-Eh-wpn" id="iq4-7z-Lvj"/>
                         <outlet property="originText" destination="rHr-Dc-CpU" id="lMC-m9-U0b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+        <!--Languages View Controller-->
+        <scene sceneID="tTP-Ei-m90">
+            <objects>
+                <viewController storyboardIdentifier="LanguagesViewController" id="saP-RH-Cub" customClass="LanguagesViewController" customModule="Translate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cdd-lV-VTc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kg0-ki-AyD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dtS-RG-MU9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Zs-0P-ay7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXF-U2-1mw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAP-Rc-oLu">
+                                                <rect key="frame" x="27.5" y="190.5" width="320" height="216"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="saP-RH-Cub" id="A6W-kI-Rut"/>
+                                                    <outlet property="delegate" destination="saP-RH-Cub" id="jvz-zw-bfD"/>
+                                                </connections>
+                                            </pickerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="zAP-Rc-oLu" firstAttribute="centerY" secondItem="DXF-U2-1mw" secondAttribute="centerY" id="Gcv-89-0cI"/>
+                                            <constraint firstItem="zAP-Rc-oLu" firstAttribute="centerX" secondItem="DXF-U2-1mw" secondAttribute="centerX" id="kbs-PU-Z73"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nn4-26-dhF">
+                                        <rect key="frame" x="0.0" y="597" width="375" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-Uw-4xB" customClass="UIControl">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccionar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="oX4-St-RTD">
+                                                        <rect key="frame" x="15" y="15" width="345" height="20"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="100"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="0.26701552350000002" blue="0.72240401330000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="oX4-St-RTD" firstAttribute="leading" secondItem="gC2-Uw-4xB" secondAttribute="leading" constant="15" id="1tM-Ic-utS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oX4-St-RTD" secondAttribute="trailing" constant="15" id="3K7-2a-CCy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oX4-St-RTD" secondAttribute="bottom" constant="15" id="9Ob-zi-OkI"/>
+                                                    <constraint firstItem="oX4-St-RTD" firstAttribute="top" secondItem="gC2-Uw-4xB" secondAttribute="top" constant="15" id="cjW-pE-Gr4"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="seleccionarAccion:" destination="saP-RH-Cub" eventType="touchUpInside" id="Oyd-wy-XMa"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VyN-DR-sW6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Zs-0P-ay7" firstAttribute="top" secondItem="Cdd-lV-VTc" secondAttribute="bottom" id="ASN-dI-Hp2"/>
+                            <constraint firstItem="Kg0-ki-AyD" firstAttribute="top" secondItem="9Zs-0P-ay7" secondAttribute="bottom" id="MxY-fT-uge"/>
+                            <constraint firstItem="9Zs-0P-ay7" firstAttribute="leading" secondItem="dtS-RG-MU9" secondAttribute="leading" id="aXF-4N-ZwH"/>
+                            <constraint firstAttribute="trailing" secondItem="9Zs-0P-ay7" secondAttribute="trailing" id="tE9-cy-AkS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="zAP-Rc-oLu" id="wmx-Ig-4us"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBd-gn-IrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="136"/>
         </scene>
     </scenes>
 </document>
