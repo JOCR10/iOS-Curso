@@ -24,7 +24,7 @@ class CoreDataManager: NSObject {
     class func createDefaultsCategory() -> [Category]
     {
         createCategory(name: "Economia", imageName: "economy")
-        createCategory(name: "Deportes", imageName: "sports")
+        createCategory(name: "Deportes", imazageName: "sports")
         createCategory(name: "Sucesos", imageName: "incident")
         createCategory(name: "Tecnologia", imageName: "technology")
         saveContext()

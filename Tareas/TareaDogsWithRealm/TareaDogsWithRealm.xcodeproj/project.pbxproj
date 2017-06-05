@@ -18,6 +18,7 @@
 		EFFBD8541EDA526400BB8164 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD8531EDA526400BB8164 /* Helper.swift */; };
 		EFFBD8581EDA539A00BB8164 /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFBD8561EDA539A00BB8164 /* DogTableViewCell.swift */; };
 		EFFBD8591EDA539A00BB8164 /* DogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFFBD8571EDA539A00BB8164 /* DogTableViewCell.xib */; };
+		EFFD779D1EE514CB0077CC97 /* TareaDogsWithRealm in Resources */ = {isa = PBXBuildFile; fileRef = EFFD779C1EE514CB0077CC97 /* TareaDogsWithRealm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		EFFBD8531EDA526400BB8164 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		EFFBD8561EDA539A00BB8164 /* DogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
 		EFFBD8571EDA539A00BB8164 /* DogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogTableViewCell.xib; sourceTree = "<group>"; };
+		EFFD779C1EE514CB0077CC97 /* TareaDogsWithRealm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TareaDogsWithRealm; sourceTree = "<group>"; };
 		F8AC063CEA511A0CCC68C9B6 /* Pods-TareaDogsWithRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TareaDogsWithRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-TareaDogsWithRealm/Pods-TareaDogsWithRealm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 		EFFBD8291EDA288E00BB8164 = {
 			isa = PBXGroup;
 			children = (
+				EFFD779C1EE514CB0077CC97 /* TareaDogsWithRealm */,
 				EFFBD8341EDA288E00BB8164 /* TareaDogsWithRealm */,
 				EFFBD8331EDA288E00BB8164 /* Products */,
 				F0F9917BF4B2649C737B7969 /* Pods */,
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFFBD8591EDA539A00BB8164 /* DogTableViewCell.xib in Resources */,
+				EFFD779D1EE514CB0077CC97 /* TareaDogsWithRealm in Resources */,
 				EFFBD84B1EDA3BCF00BB8164 /* DogsStoryboard.storyboard in Resources */,
 				EFFBD83D1EDA288E00BB8164 /* Assets.xcassets in Resources */,
 			);
