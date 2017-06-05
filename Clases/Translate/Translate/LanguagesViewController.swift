@@ -8,9 +8,18 @@
 
 import UIKit
 
+protocol LanguagesViewControllerDelegate: class {
+    
+    func closePopOver()
+}
+
 class LanguagesViewController: UIViewController {
 
+    weak var delegate : LanguagesViewControllerDelegate?
+
+    
     @IBAction func seleccionarAccion(_ sender: Any) {
+        delegate?.closePopOver()
     }
     
     @IBOutlet weak var pickerView: UIPickerView!

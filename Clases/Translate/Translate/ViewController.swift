@@ -26,6 +26,10 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
     }
     
     @IBAction func origenAction(_ sender: Any) {
+        let languageViewController = storyboard?.instantiateViewController(withIdentifier: "LanguagesViewController") as! LanguagesViewController
+        languageViewController.modalPresentationStyle = .overCurrentContext
+        languageViewController.delegate = self
+        present(languageViewController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -33,6 +37,7 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
         registerNotifications()
         showActivityIndicator()
         APIManager.getLanguages()
+        
     }
     
     func registerNotifications()
@@ -75,6 +80,13 @@ class ViewController: UIViewController, NVActivityIndicatorViewable {
         DispatchQueue.main.async {
             self.stopAnimating()
         }
+    }
+}
+
+extension ViewController: LanguagesViewControllerDelegate
+{
+    func closePopOver() {
+        dismiss(animated: true, completion: nil)
     }
 }
 
