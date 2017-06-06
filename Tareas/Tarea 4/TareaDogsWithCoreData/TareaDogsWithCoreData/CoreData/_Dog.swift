@@ -6,7 +6,7 @@ import CoreData
 
 public enum DogAttributes: String {
     case color = "color"
-    case imageName = "imageName"
+    case image = "image"
     case name = "name"
     case orden = "orden"
 }
@@ -40,7 +40,7 @@ open class _Dog: NSManagedObject {
     var color: String?
 
     @NSManaged open
-    var imageName: String?
+    var image: NSData?
 
     @NSManaged open
     var name: String?

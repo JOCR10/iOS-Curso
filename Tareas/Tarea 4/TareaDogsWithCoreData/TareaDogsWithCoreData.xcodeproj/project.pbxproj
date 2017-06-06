@@ -480,6 +480,7 @@
 				EFFD77891EE510B10077CC97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

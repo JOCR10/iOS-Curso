@@ -1,10 +1,3 @@
-//
-//  AddDogViewController.swift
-//  TareaDogsWithRealm
-//
-//  Created by Local User on 5/27/17.
-//  Copyright © 2017 Local User. All rights reserved.
-//
 
 import UIKit
 
@@ -18,7 +11,7 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
     
     var imagePicker = UIImagePickerController()
     
-    var dogImage = ""
+    var dogImage : NSData?
     
     override func viewDidLoad()
     {
@@ -39,25 +32,27 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
     
     func saveDogsAction()
     {
-        if nombreTextField.text!.characters.count > 0 && colorTextField.text!.characters.count > 0 && dogImage.characters.count > 0
+        guard let _ = dogImage else
         {
-//            RealmManager.createDog(name: nombreTextField.text!, color: colorTextField.text!, image: dogImage)
+            mostrarAlerta(msj: "Debe seleccionar una imagen", titulo: "Alerta")
+            return
+        }
+        if nombreTextField.text!.characters.count > 0 && colorTextField.text!.characters.count > 0
+        {
+            CoreDataManager.createDog(name: nombreTextField.text!, color: colorTextField.text!, image: dogImage!)
             navigationController?.popViewController(animated: true)
         }
         else
         {
-            mostrarAlerta(msj: "Debe digitar el nombre y el color del perro, y además seleccionar una imagen", titulo: "Alerta")
+            mostrarAlerta(msj: "Debe digitar el nombre y el color del perro", titulo: "Alerta")
         }
     }
     
     func mostrarAlerta(msj: String, titulo: String){
         
         let alertController = UIAlertController(title: titulo, message: msj, preferredStyle: .alert)
-        
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
         alertController.addAction(action)
-        
         present(alertController, animated: true, completion: nil)
         
     }
@@ -66,7 +61,6 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
         
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
         {
-            print("Button capture")
             imagePicker.delegate = self
             imagePicker.sourceType = .photoLibrary
             self.present(imagePicker, animated: true, completion: nil)
@@ -76,26 +70,9 @@ class AddDogViewController: UITableViewController, UINavigationControllerDelegat
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
-        let imageUrl          = info[UIImagePickerControllerReferenceURL] as! NSURL
-        let imageName         = imageUrl.lastPathComponent
-        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-        let photoURL          = URL(fileURLWithPath: documentDirectory).appendingPathComponent(imageName!).path
-        let image             = info[UIImagePickerControllerOriginalImage]as! UIImage
-        
+        let image = info[UIImagePickerControllerOriginalImage]as! UIImage
         dogImageView.image = image
-        dogImage = photoURL
-        
-        let fileManager = FileManager.default
-        if fileManager.fileExists(atPath: photoURL){
-            do {
-                try fileManager.removeItem(atPath: photoURL)
-            }
-            catch let error as NSError {
-                print("Ooops! Something went wrong: \(error)")
-            }
-        }
-        let imageData = UIImageJPEGRepresentation(image, 0.5)
-        fileManager.createFile(atPath: photoURL as String, contents: imageData, attributes: nil)
+        dogImage = UIImagePNGRepresentation(image) as NSData?
         self.dismiss(animated: true, completion: nil);
     }
     

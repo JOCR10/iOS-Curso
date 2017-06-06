@@ -23,10 +23,8 @@ class DogTableViewCell: UITableViewCell {
     {
         colorLabel.text = dog.color
         nameLabel.text = dog.name
-//        if FileManager.default.fileExists(atPath: dog.imageName){
-//            let urlImage = NSURL(fileURLWithPath: dog.imageName)
-//            let data = NSData(contentsOf: urlImage as URL)
-//            dogImageView.image = UIImage(data: data! as Data)
-//        }
+        let newImage = UIImage(data: dog.image! as Data)
+        dogImageView.image = newImage
+
     }
 }

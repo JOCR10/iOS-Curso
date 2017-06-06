@@ -1,10 +1,3 @@
-//
-//  DogsViewController.swift
-//  TareaDogsWithRealm
-//
-//  Created by Local User on 5/27/17.
-//  Copyright © 2017 Local User. All rights reserved.
-//
 
 import UIKit
 
@@ -12,8 +5,8 @@ class DogsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    //var dogs : Results<Dog>?
-
+    var dogs = [Dog]()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -27,7 +20,7 @@ class DogsViewController: UIViewController {
         initializeDogs()
         tableView.reloadData()
     }
-
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -35,7 +28,11 @@ class DogsViewController: UIViewController {
     
     func initializeDogs()
     {
-        //dogs = RealmManager.getAllDogs()
+        guard let dogsArray = CoreDataManager.getAllDogs() else
+        {
+            return
+        }
+        dogs = dogsArray
     }
     
     func createdAddButton()
@@ -50,29 +47,24 @@ class DogsViewController: UIViewController {
         let addDogViewController = storyboard!.instantiateViewController(withIdentifier: AddDogViewController.getViewControllerIdentifier())
         navigationController?.pushViewController(addDogViewController, animated: true)
     }
-
+    
 }
 
 extension DogsViewController : UITableViewDataSource, UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-//        guard let dogs = dogs else
-//        {
-//            return 0
-//        }
-        
-        return 1 //dogs.count
+        return dogs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = (tableView.dequeueReusableCell(withIdentifier: DogTableViewCell.getTableViewCellIdentifier())) as! DogTableViewCell
-        //let dog = dogs![indexPath.row]
-        //cell.setUpCell(dog:  dog)
+        let dog = dogs[indexPath.row]
+        cell.setUpCell(dog:  dog)
         
         return cell
-
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

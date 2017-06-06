@@ -9,27 +9,9 @@ class CoreDataManager: NSObject {
     {
         let result = Dog.mr_findAll()
         if result!.count > 0 {
-            return (result as! [Dog])
+            return (result as! [Dog]).sorted{($0.orden?.intValue)! > ($1.orden?.intValue)!}
         }
         return nil
-    }
-    
-//    class func createDefaultsCategory() -> [Category]
-//    {
-////        createCategory(name: "Economia", imageName: "economy")
-////        createCategory(name: "Deportes", imazageName: "sports")
-////        createCategory(name: "Sucesos", imageName: "incident")
-////        createCategory(name: "Tecnologia", imageName: "technology")
-////        saveContext()
-////        return getAllCategories()
-//        
-//    }
-    
-    private class func createCategory(name : String, imageName : String)
-    {
-        //let category = Category.mr_createEntity()
-//        category?.name = name
-//        category?.imageName = imageName
     }
     
     private class func saveContext()
@@ -37,15 +19,18 @@ class CoreDataManager: NSObject {
         NSManagedObjectContext.mr_default().mr_saveToPersistentStoreAndWait()
     }
     
-    class func createDogs(dog : Category, descriptionNews : String, title : String)
+    class func createDog(name: String, color: String, image: NSData)
     {
-        
-//        let news = Dog.mr_createEntity()
-//        news?.descriptionNews = descriptionNews
-//        news?.title = title
-//        news?.createdAt = Date()
-//        news?.category = category
-        //category.addNewsObject(news!)
+        let dog = Dog.mr_createEntity()
+        var orden = 1
+        dog?.name = name
+        dog?.color = color
+        dog?.image = image
+        if let dogs = getAllDogs()
+        {
+            orden = dogs.count + 1
+        }
+        dog?.orden = orden as NSNumber
         saveContext()
     }
     
