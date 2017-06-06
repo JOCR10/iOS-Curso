@@ -11,18 +11,23 @@ import UIKit
 protocol LanguagesViewControllerDelegate: class {
     
     func closePopOver()
+    func selectLanguage(languageType : Constants.LanguageType, language: String)
 }
 
 class LanguagesViewController: UIViewController {
 
     weak var delegate : LanguagesViewControllerDelegate?
+    var languageType : Constants.LanguageType?
+    var languagesArray = [[String:String]]()
+    @IBOutlet weak var pickerView: UIPickerView!
 
     
     @IBAction func seleccionarAccion(_ sender: Any) {
-        delegate?.closePopOver()
+        
+        let languageSelected = languagesArray[pickerView.selectedRow(inComponent: 0)]
+        delegate?.selectLanguage(languageType: languageType!, language: languageSelected[Constants.DIRS_KEY]!)
     }
     
-    @IBOutlet weak var pickerView: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +39,6 @@ class LanguagesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension LanguagesViewController: UIPickerViewDelegate, UIPickerViewDataSource
@@ -55,10 +48,10 @@ extension LanguagesViewController: UIPickerViewDelegate, UIPickerViewDataSource
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 0
+        return languagesArray.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return ""
+        return languagesArray[row][Constants.LANGUAGE_KEY]
     }
 }

@@ -110,18 +110,44 @@
                                             <constraint firstAttribute="height" constant="80" id="rMu-fc-1Ag"/>
                                         </constraints>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="W6z-hD-Ywc">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8e5-be-BQ8">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="TTI-9c-aNI"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pA-wP-6n8">
+                                                <rect key="frame" x="0.0" y="15" width="375" height="45"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <state key="normal" title="Translate">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="translateAccion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WqY-Uw-EN2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ovN-EM-6ch"/>
+                                        </constraints>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhL-P0-r7h" userLabel="Second part">
-                                        <rect key="frame" x="0.0" y="80" width="375" height="567"/>
+                                        <rect key="frame" x="0.0" y="140" width="375" height="507"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWF-Q3-ikQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="15" height="567"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="507"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="CC3-lZ-BBd"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ydK-Pu-KxG">
-                                                <rect key="frame" x="15" y="0.0" width="345" height="567"/>
+                                                <rect key="frame" x="15" y="0.0" width="345" height="507"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4D-ff-FRh">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="15"/>
@@ -131,16 +157,16 @@
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1J0-Qw-nJQ">
-                                                        <rect key="frame" x="0.0" y="15" width="345" height="537"/>
+                                                        <rect key="frame" x="0.0" y="15" width="345" height="477"/>
                                                         <subviews>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rHr-Dc-CpU">
-                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="261"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="231"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DL8-6N-Y3W">
-                                                                <rect key="frame" x="0.0" y="276" width="345" height="261"/>
+                                                                <rect key="frame" x="0.0" y="246" width="345" height="231"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -148,7 +174,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viH-vb-ThN">
-                                                        <rect key="frame" x="0.0" y="552" width="345" height="15"/>
+                                                        <rect key="frame" x="0.0" y="492" width="345" height="15"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
                                                 </subviews>
@@ -157,7 +183,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCs-aX-Wgw">
-                                                <rect key="frame" x="360" y="0.0" width="15" height="567"/>
+                                                <rect key="frame" x="360" y="0.0" width="15" height="507"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
