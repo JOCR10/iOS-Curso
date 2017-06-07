@@ -12,13 +12,42 @@
 import UIKit
 
 struct ToDoTasksList{
-    struct Request{
+    
+    struct TestInformation {
+        struct Request{
+            var numberText: String
+        }
+        
+        struct Response{
+            var number: Int
+        }
+        
+        struct ViewModel{
+            var numberText: String
+        }
     }
     
-    struct Response{
+    struct DataSource {
+        struct Request{
+        }
+        
+        struct Response{
+            var arrayTask: [ToDoTasksList.Task]
+        }
+        
+        struct ViewModel{
+            var arrayTask: [ToDoTasksList.TaskModelCell]
+        }
     }
     
-    struct ViewModel{
+    struct Task {
+        var text: String
+        var counter: Int
+    }
+    
+    struct TaskModelCell {
+        var text: String
+        var counter: String
     }
 }
 

@@ -25,6 +25,9 @@
 		EF6C62601EE774D400A13240 /* ToDoTasksListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6C62591EE774D400A13240 /* ToDoTasksListRouter.swift */; };
 		EF6C62611EE774D400A13240 /* ToDoTasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6C625A1EE774D400A13240 /* ToDoTasksListViewController.swift */; };
 		EF6C62621EE774D400A13240 /* ToDoTasksListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6C625B1EE774D400A13240 /* ToDoTasksListWorker.swift */; };
+		EF6C62661EE78DC600A13240 /* ToDoTaskListCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6C62641EE78DC600A13240 /* ToDoTaskListCustomCell.swift */; };
+		EF6C62671EE78DC600A13240 /* ToDoTaskListCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6C62651EE78DC600A13240 /* ToDoTaskListCustomCell.xib */; };
+		EF6C626A1EE7924200A13240 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6C62691EE7924200A13240 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		EF6C62591EE774D400A13240 /* ToDoTasksListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoTasksListRouter.swift; path = Scenes/ToDoTasksList/ToDoTasksListRouter.swift; sourceTree = "<group>"; };
 		EF6C625A1EE774D400A13240 /* ToDoTasksListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoTasksListViewController.swift; path = Scenes/ToDoTasksList/ToDoTasksListViewController.swift; sourceTree = "<group>"; };
 		EF6C625B1EE774D400A13240 /* ToDoTasksListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoTasksListWorker.swift; path = Scenes/ToDoTasksList/ToDoTasksListWorker.swift; sourceTree = "<group>"; };
+		EF6C62641EE78DC600A13240 /* ToDoTaskListCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoTaskListCustomCell.swift; path = Scenes/ToDoTasksList/CustomCell/ToDoTaskListCustomCell.swift; sourceTree = "<group>"; };
+		EF6C62651EE78DC600A13240 /* ToDoTaskListCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToDoTaskListCustomCell.xib; path = Scenes/ToDoTasksList/CustomCell/ToDoTaskListCustomCell.xib; sourceTree = "<group>"; };
+		EF6C62691EE7924200A13240 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Scenes/ToDoTasksList/Extension/Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 		EF6C62461EE772A200A13240 /* ToDoTasksList */ = {
 			isa = PBXGroup;
 			children = (
+				EF6C62681EE7922700A13240 /* Extension */,
+				EF6C62631EE78D8500A13240 /* CustomCell */,
 				EF6C62411EE76F3500A13240 /* ToDoTasksList.storyboard */,
 				EF6C62551EE774D400A13240 /* ToDoTasksListConfigurator.swift */,
 				EF6C62561EE774D400A13240 /* ToDoTasksListInteractor.swift */,
@@ -125,6 +133,23 @@
 				EF6C625B1EE774D400A13240 /* ToDoTasksListWorker.swift */,
 			);
 			name = ToDoTasksList;
+			sourceTree = "<group>";
+		};
+		EF6C62631EE78D8500A13240 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF6C62641EE78DC600A13240 /* ToDoTaskListCustomCell.swift */,
+				EF6C62651EE78DC600A13240 /* ToDoTaskListCustomCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		EF6C62681EE7922700A13240 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF6C62691EE7924200A13240 /* Helper.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +214,7 @@
 				EF6C62361EE76E6800A13240 /* Assets.xcassets in Resources */,
 				EF6C62441EE76FDD00A13240 /* AddToDoTask.storyboard in Resources */,
 				EF6C62421EE76F3500A13240 /* ToDoTasksList.storyboard in Resources */,
+				EF6C62671EE78DC600A13240 /* ToDoTaskListCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +232,8 @@
 				EF6C625F1EE774D400A13240 /* ToDoTasksListPresenter.swift in Sources */,
 				EF6C62521EE7738400A13240 /* AddToDoTaskRouter.swift in Sources */,
 				EF6C62611EE774D400A13240 /* ToDoTasksListViewController.swift in Sources */,
+				EF6C62661EE78DC600A13240 /* ToDoTaskListCustomCell.swift in Sources */,
+				EF6C626A1EE7924200A13240 /* Helper.swift in Sources */,
 				EF6C624F1EE7738400A13240 /* AddToDoTaskInteractor.swift in Sources */,
 				EF6C62531EE7738400A13240 /* AddToDoTaskViewController.swift in Sources */,
 				EF6C62601EE774D400A13240 /* ToDoTasksListRouter.swift in Sources */,

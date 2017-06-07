@@ -12,18 +12,23 @@
 import UIKit
 
 protocol ToDoTasksListViewControllerInput{
-    func displaySomething(viewModel: ToDoTasksList.ViewModel)
+    func displayTestInformation(viewModel: ToDoTasksList.TestInformation.ViewModel)
+    func displayDataSource(viewModel: ToDoTasksList.DataSource.ViewModel)
 }
 
 protocol ToDoTasksListViewControllerOutput{
-    func doSomething(request: ToDoTasksList.Request)
+    func requestTestInformation(request: ToDoTasksList.TestInformation.Request)
+    func requestDataSource(request: ToDoTasksList.DataSource.Request)
+
 }
 
 class ToDoTasksListViewController: UIViewController, ToDoTasksListViewControllerInput{
     var output: ToDoTasksListViewControllerOutput!
     var router: ToDoTasksListRouter!
     
+    @IBOutlet weak var tableView: UITableView!
     // MARK: Object lifecycle
+    var myStruct : [ToDoTasksList.TaskModelCell] = []
     
     override func awakeFromNib(){
         super.awakeFromNib()
@@ -34,23 +39,54 @@ class ToDoTasksListViewController: UIViewController, ToDoTasksListViewController
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        doSomethingOnLoad()
+        requestTestInformation(number: "15")
+        requestDataSource()
+        tableView.registerCustomCell(identifier: ToDoTaskListCustomCell.getTableViewCellIdentifier())
     }
     
     // MARK: Event handling
-    
-    func doSomethingOnLoad(){
-        // NOTE: Ask the Interactor to do some work
-        
-        let request = ToDoTasksList.Request()
-        output.doSomething(request: request)
+    func requestTestInformation(number: String)
+    {
+        let request = ToDoTasksList.TestInformation.Request(numberText: number)
+        output.requestTestInformation(request: request)
     }
     
-    // MARK: Display logic
-    
-    func displaySomething(viewModel: ToDoTasksList.ViewModel){
-        // NOTE: Display the result from the Presenter
-        
-        // nameTextField.text = viewModel.name
+    func requestDataSource()
+    {
+        let request = ToDoTasksList.DataSource.Request()
+        output.requestDataSource(request: request)
     }
+
+    
+    //display logic
+    func displayTestInformation(viewModel: ToDoTasksList.TestInformation.ViewModel)
+    {
+        print("El resultado es \(viewModel.numberText)")
+    }
+    
+    func displayDataSource(viewModel: ToDoTasksList.DataSource.ViewModel)
+    {
+        myStruct = viewModel.arrayTask
+    }
+
+
+}
+
+extension ToDoTasksListViewController: UITableViewDataSource, UITableViewDelegate
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myStruct.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ToDoTaskListCustomCell.getTableViewCellIdentifier()) as! ToDoTaskListCustomCell
+        let item = myStruct[indexPath.row]
+        cell.setUpCell(task: item)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
 }
